@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" type="text/css" media="all" href="content/styles.css" />
+<title>Обработка массивов.</title>
+<link rel="shortcut icon" href="content/icon.ico" type="image/x-icon" />
+</head>
+
+<body class="body">
+ <a name="up"></a>
+ 
+ 
+ <!--шапка-->
+ <div id="header">
+    <div id="header-content">
+		<p class="bonch"> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича<br>
+	    <nobr style="color:#ff8000;">Программирование на Машинно-Ориентированных Языках</nobr>
+	    </p>
+		<a class="home" href="../index.html"><img title="На главную" src="content/home.png" ></a>
+    <div id="main_menu">  
+<!-- Главное Меню -->	  
+<ul class="menu_mainmenu">
+<li><a href="themes_3.html" >Теория (часть 1)</a>
+<ul>
+<li><a href="t1.html" >&diams;Регистры</a>
+	<ul>
+		<li><a href="t1.html#ron" >&diams;Регистры Общего Назначения</a></li>
+		<li><a href="t1.html#ir" >&diams;Индексные Регистры</a></li>
+		<li><a href="t1.html#rs" >&diams;Регистры Сегментов</a></li>
+		<li><a href="t1.html#ru" >&diams;Регистры - Указатели</a></li>
+		<li><a href="t1.html#ruk" >&diams;Регистр Указателя Команд</a></li>
+		<li><a href="t1.html#rf" >&diams;Регистр Флагов</a></li>
+	</ul>
+</li>
+<li><a href="t2.html">&diams;Сегменты, принцип сегментации</a></li>
+<li><a href="t3.html">&diams;Стек</a></li>
+<li><a href="t4.html" >&diams;Адресация</a>
+	<ul>
+		<li><a href="t4.html#ad" >&diams;Адресация данных</a></li>
+		<li><a href="t4.html#ar" >&diams;Режимы адресации</a></li>
+	</ul>
+</li>
+<li><a href="t5.html" >&diams;Организация программы</a>
+	<ul>
+		<li><a href="t5.html#ops" >&diams;Организация программы.Сегменты</a></li>
+		<li><a href="t5.html#mp" >&diams;Модели памяти и упрощенные директивы определения сегментов</a></li>
+		<li><a href="t5.html#dz" >&diams;Директивы задания набора допустимых команд</a></li>
+	</ul>
+</li>		
+<li><a href="t6.html">&diams;Структура программы на языке Ассемблера</a>
+	<ul>
+		<li><a href="t6.html#st" >&diams;Структура программы на языке Ассемблера</a></li>
+		<li><a href="t6.html#com" >&diams;Программа типа СОМ</a></li>
+	</ul>
+</li>
+<li><a href="t7.html" >&diams;Инициализация и описание данных</a></li>
+<li><a href="t8.html" >&diams;Арифметические команды</a>
+	<ul style="top:-235px">
+		<li><a href="t8.html#ks" >&diams;Команды сложения ADD, ADC, INC</a>
+			<ul>
+			<li><a href="t8.html#add" >&diams;ADD</a></li>
+			<li><a href="t8.html#adc" >&diams;ADC</a></li>
+			<li><a href="t8.html#inc" >&diams;INC</a></li>
+			</ul></li>
+		<li><a href="t8.html#kv" >&diams;Команды вычитания SUB, SBB, DEC и NEG</a>
+		<ul>
+			<li><a href="t8.html#kv" >&diams;SUB, SBB, DEC</a></li>
+			<li><a href="t8.html#neg" >&diams;NEG</a></li>
+		</ul></li>
+		<li><a href="t8.html#ku" >&diams;Команды умножения MUL и IMUL</a>
+		<ul>
+			<li><a href="t8.html#mul" >&diams;MUL</a></li>
+			<li><a href="t8.html#imul" >&diams;IMUL</a></li>
+		</ul></li>
+		<li><a href="t8.html#ubc" >&diams;Умножение больших чисел</a></li>
+		<li><a href="t8.html#kd" >&diams;Команды деления DIV и IDIV</a></li>
+		<li><a href="t8.html#pr" >&diams;Преобразование байта в слово и слова
+		в двойное слово</a></li>
+		<li><a href="t8.html#dbc" >&diams;Деление больших чисел</a></li>	
+	</ul>
+</li>
+<li><a href="t9.html" >&diams;Команды передачи управления</a>
+	<ul style="top:-215px">
+		<li><a href="t9.html#jmp" >&diams;Команда безусловного перехода JMP</a></li>
+		<li><a href="t9.html#usl" >&diams;Команды условной передачи управления</a></li>
+		<li><a href="t9.html#znak" >&diams;Знаковые и беззнаковые данные</a></li>
+		<li><a href="t9.html#bzd" >&diams;Переходы для беззнаковых данных</a></li>
+		<li><a href="t9.html#zd" >&diams;Переходы для знаковых данных</a></li>
+		<li><a href="t9.html#sp" >&diams;Специальные арифметические проверки</a></li>
+	</ul>
+</li>
+<li><a href="t80.html" >&diams;Команды сдвигов</a></li>	
+</ul>
+
+ 
+<li><a href="themes_3.html" >Теория (часть 2)</a>
+<ul>
+<li><a href="t81.html">&diams;Команды логических операций</a></li>
+<li><a href="t90.html">&diams;Команды циклов</a></li>
+<li><a href="t91.html">&diams;Работа с подпрограммами</a></li>
+<li><a href="t10.html" >&diams;Операции ввода с клавиатуры и вывода на экран в DOS приложениях</a>
+	<ul>
+		<li><a href="t10.html#output" >&diams;Вывод на экран средствами DOS</a></li>
+		<li><a href="t10.html#input" >&diams;Ввод данных с клавиатуры</a></li>
+		<li><a href="t10.html#str-name" >&diams;Ввод и вывод имен (строк)</a>
+		<ul style="top:-82px"><li><a href="t10.html#str-out" >&diams;Вывод текста запроса</a></li>
+			<li><a href="t10.html#str-in" >&diams;Ввод имени с клавиатуры</a></li>
+			<li><a href="t10.html#str-zv" >&diams;Установка звукового сигнала и ограничителя '$'</a></li>
+			<li><a href="t10.html#str-centr" >&diams;Центрирование и вывод имени на экран</a></li>
+			<li><a href="t10.html#clear" >&diams;Очистить экран</a></li>
+			<li><a href="t10.html#str" >&diams;Установка курсора (строка/столбец)</a></li>
+		</ul></li>
+		<li><a href="t10.html#pr" >&diams;Преобразование строки в число и числа в строку</a>
+		<ul><li><a href="t10.html#asc" >&diams;Преобразование ASCII-формата в двоичный формат</a></li>
+		    <li><a href="t10.html#toAsc" >&diams;Преобразование двоичного формата в ASCII-формат</a></li>
+		</ul></li>	</ul>
+</li>
+<li><a href="t10-2.html" >&diams;Программирование в UNIX</a>
+	<ul style="top:-50px">
+		<li><a href="t10-2.html#pr_unix" >&diams;Программирование в LINUX (первый пример)</a></li>
+		<li><a href="t10-2.html#make" >&diams;Утилита make</a></li>
+		<li><a href="t10-2.html#perem" >&diams;Переменные</a></li>
+		<li><a href="t10-2.html#output" >&diams;Вывод на экран через INT 80H</a></li>
+		<li><a href="t10-2.html#printf" >&diams;Вывод с помощью printf</a></li>
+		<li><a href="t10-2.html#vizov" >&diams;Вызов функций scanf и printf из Nasm</a></li>
+		<li><a href="t10-2.html#arifm" >&diams;Арифметические операции  в формате ASCII</a>
+		<ul style="top:-137px">
+		<li><a href="t10-2.html#sloz" >&diams;Сложение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#vic" >&diams;Вычитание в ASCII-формате</a></li>
+		<li><a href="t10-2.html#umn" >&diams;Умножение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#del" >&diams;Деление в ASCII-формате</a></li>
+		<li><a href="t10-2.html#bcd" >&diams;Двоично-десятичный формат (SCD)</a></li>
+	</ul></li></ul>
+</li>	
+<li><a href="t13.html">&diams;EXE и COM форматы</a>
+	<ul style="top:-171px">
+		<li><a href="t13.html#rp" >&diams;Распределение программы в памяти</a></li>
+		<li><a href="t13.html#exe+com" >&diams;EXE- и COM-программы</a></li>
+		<li><a>&diams;EXE</a>
+		<ul><li><a href="t13.html#exe" >&diams;Заголовок EXE-файла</a></li>
+		<li><a href="t13.html#exe-str" >&diams;Описание структуры заголовка EXE 
+		файла и таблицы расположения сегментов</a></li>
+		</ul></li>
+		<li><a href="t13.html#pzpp" >&diams;Процесс загрузки программ в память</a></li>
+		<li><a href="t13.html#prps" >&diams;Префикс программного сегмента</a></li>
+		<li><a href="t13.html#str-psp" >&diams;Структура PSP</a></li>
+		<li><a href="t13.html#exe-pr" >&diams;EXE-программы</a></li>
+		<li><a href="t13.html#com-pr" >&diams;COM-программы</a></li>
+		<li><a href="t13.html#exit-pr" >&diams;Выход из программы</a></li>
+	</ul>
+</li>
+<li><a href="t11.html" >&diams;Обработка массивов</a>
+	<ul style="top:-36px">
+		<li><a href="t11.html#str" >&diams;Обработка строк</a></li>
+		<li><a href="t11.html#m1" >&diams;Обработка одномерных массивов</a></li>
+		<li><a href="t11.html#m2" >&diams;Двумерные массивы</a></li>
+		</ul>
+</li>	
+<li><a href="t12.html" >&diams;Математический сопроцессор</a>
+	<ul style="top:-190px">
+		<li><a href="t12.html#ms" >&diams;Математический сопроцессор</a></li>
+		<li><a href="t12.html#och" >&diams;Особые числав</a></li>
+		<li><a href="t12.html#reg" >&diams;Регистры</a></li>
+		<li><a href="t12.html#rd" >&diams;Регистры данных</a></li>
+		<li><a href="t12.html#sc" >&diams;Система команд</a></li>
+		<li><a href="t12.html#uoc" >&diams;Условные обозначения для команд базового сопроцессора</a></li>
+		<li><a>&diams;Команды</a><ul>
+			<li><a href="t12.html#cpd" >&diams;Команды пересылки данных</a></li>
+			<li><a href="t12.html#czk" >&diams;Команды загрузки констант</a></li>
+			<li><a href="t12.html#ak" >&diams;Арифметические команды</a></li>
+			<li><a href="t12.html#sak" >&diams;Специальные арифметические команды</a></li>
+		</ul></li></ul>
+</li>	
+<li><a href="t14.html">&diams;Машинные коды</a>
+	<ul style="top:-140px">
+		<li><a href="t14.html#mk" >&diams;Машинные коды</a></li>
+		<li><a href="t14.html#bko" >&diams;Байт кода операции</a></li>
+		<li><a href="t14.html#bsa" >&diams;Байт способа адресации</a></li>
+		<li><a href="t14.html#ra" >&diams;Режимы адресации</a></li>
+		<li><a href="t14.html#pras" >&diams;Примеры ассемблирования</a></li>
+	</ul>
+</li>		
+</ul>
+
+
+<li><a href="themes_1.html" >Практикум</a>
+<ul>
+<li><a href="l1.html" > &diams; Лабораторная Работа №1 </a></li>
+<li><a href="l2.html" > &diams; Лабораторная Работа №2</a></li>
+<li><a href="l3.html" > &diams; Лабораторная Работа №3</a></li>
+<li><a href="l4.html" > &diams; Лабораторная Работа №4</a></li>
+<li><a href="l5.html" > &diams; Лабораторная Работа №5</a></li>
+</ul>  </ul>
+<!-- Главное Меню -- END -->
+</div>
+</div>
+</div>
+  
+  
+ <!-- страничка-->
+<div id="width-page-00">
+    <div id="page-00" style=" overflow:  hidden; height:  100%;">
+		<marquee loop="-1" scrollamount="1" behavior="alternate" direction="up" height="100%">
+		О б р а б о т к а<p> </p>м а с с и в о в
+		</marquee>
+	</div>
+</div>
+ 
+   <div id="width-page">
+      <div id="page">
+		 <div id="page_content">
+            <div class="themes"> 
+	<a name="str"></a>
+	<h2>Обработка строк.</h2>
+	<p class="stress">	 </p> 
+	<ol class="text">
+	 <li>В мнемонике команд обработки строк всегда содержится буква <b>S</b> (<b>String</b> — строка).
+	 Она является <ins><i>последней</i></ins> или <ins><i>предпоследней</i></ins> буквой.</li>
+	<li>Содержимое строки для микропроцессора <b>НЕ</b> имеет никакого значения. Это могут быть
+	символы, числа и все, что угодно. Основное, что имеет значение, — это <b>длина операнда</b>.</li>
+	<li>Строка в базовом <b>Ассемблере</b> может обрабатываться <b>побайтно</b> (<b>BYTE</b> —
+	<ins><i>последняя</i></ins> буква в команде будет <b>В</b>) или <b>пословно</b> (<b>WORD</b>
+	— <i><ins>последняя</ins></i> буква в команде будет <b>W</b>).</li>
+	<li>Строка может обрабатываться <b>группой</b> (<b>цепочкой</b>), тогда перед командой 
+	появляется префикс <b>REPx</b> (<b>REPeat</b> — повторить). Количество повторений должно
+	находиться в регистре <b>СХ</b>. Этот префикс алгоритмически подобен команде <b>LOOPx</b>.</li>
+	<li><b>Строка-приемник</b> должна находиться обязательно в дополнительном сегменте памяти <b>ES</b>
+	со смещением <b>DI</b> (адресация <b>< ES:DI > </b>).</li>
+	<li><b>Строка-источник</b> должна находиться в сегменте данных <b>DS</b> со смещением <b>SI</b>
+	(адресация <b>< DS:SI > </b>). Допускается замена регистра сегмента <b>DS</b> с помощью префикса
+	замены сегмента.</li>
+	<li>В процессе циклического выполнения команд указатели <b>SI</b> и <b>DI</b> автоматически
+	модифицируются в зависимости от длины элемента строки и значения флага направления <b>DF</b>:
+	<ul><li>Если <b>< DF >=0</b>, значения <b>SI</b> и <b>DI</b> увеличиваются (<i>строка обрабатывается
+	слева направо — в сторону больших адресов</i>).</li>
+	<li>Если <b>< DF >=1</b>, значения <b>SI</b> и <b>DI</b> уменьшаются (<i>строка обрабатывается 
+	справа налево — в сторону меньших адресов</i>).</li></ul></li>
+	<li>Флаг направления <b>DF</b> очищается или устанавливается, соответственно, командами 
+	<code>CLD</code> или <code>STD</code>.</li>
+	<li>Длина строки в базовом <b>Ассемблере</b> <= 64К байт.</li>
+	</ol>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td><b> Команда </b></td>
+			<td><b> Назначение </b></td>
+			<td><b> Алгоритм работы </b></td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Команды пересылки <b>MOVSx</b></ins> </i>- переслать один 
+			байт или одно слово из  одной  области  памяти  в другую</i></td>
+		</tr>
+		<tr>
+			<td><b>MOVS</b> <comment>приемник, источник</comment></td>
+			<td>Копирование строки</td>
+			<td><code>Приемник &lArr; Источник</code></td>
+		</tr>
+		<tr>
+			<td><b>MOVSB</b></td>
+			<td>Копирование строки байтов</td>
+			<td rowspan="2"><code>[DI] &lArr; [SI]</code></td>
+		</tr>
+		<tr>
+			<td><b>MOVSW</b></td>
+			<td>Копирование строки слов</td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Команды сравнения <b>CMPSx</b></ins> </i>- сравнить 
+			содержимое двух областей памяти, размером  в  один байт
+			или в одно слово</i></td>
+		</tr>
+		<tr>
+			<td><b>CMPS</b> <comment>приемник, источник</comment></td>
+			<td>Сравнение строки</td>
+			<td><code>Приемник ~ Источник</code></td>
+		</tr>
+		<tr>
+			<td><b>CMPSB</b></td>
+			<td>Сравнение строк байтов</td>
+			<td rowspan="2"><code>[DI] ~ [SI]</code></td>
+		</tr>
+		<tr>
+			<td><b>CMPSW</b></td>
+			<td>Сравнение строк слов</td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Команды сканирования <b>SCASx</b></ins> </i>- сравнить
+			содержимое регистра <b>AL</b> или <b>AX</b> с содержимым памяти</i></td>
+		</tr>
+		<tr>
+			<td><b>SCAS</b> <comment> приемник </comment></td>
+			<td>Сканирование строки</td>
+			<td><code>Приемник ~ <b>AX</b>(или <b>AL</b>)</code></td>
+		</tr>
+		<tr>
+			<td><b>SCASB</b></td>
+			<td>Сканирование строки байтов</td>
+			<td><code>[DI] ~ <b>AL</b></code></td>
+		</tr>
+		<tr>
+			<td><b>SCASW</b></td>
+			<td>Сравнение строки слов</td>
+			<td><code>[DI] ~ <b>AX</b></code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Команды загрузки <b>LODSx</b></ins> </i>- загрузить
+			из памяти один байт в регистр  <b>AL</b>  или  одно  слово  в регистр <b>AX</b></i></td>
+		</tr>
+		<tr>
+			<td><b>LODS</b> <comment> источник </comment></td>
+			<td>Чтение из строки</td>
+			<td><code>Источник &rArr; <b>AX</b>(<b>AL</b>)</code></td>
+		</tr>
+		<tr>
+			<td><b>LODSB</b></td>
+			<td>Чтение байта из строки</td>
+			<td><code>[SI] &rArr; <b>AL</b></code></td>
+		</tr>
+		<tr>
+			<td><b>LODSW</b></td>
+			<td>Чтение слова из строки</td>
+			<td><code>[SI] &rArr; <b>AX</b></code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Команды сохранения <b>STOSx</b></ins> </i>- записать содержимое
+			регистра <b>AL</b> или <b>AX</b> в память</i></td>
+		</tr>
+		<tr>
+			<td><b>STOS</b> <comment> приемник </comment></td>
+			<td>Записать в строку</td>
+			<td><code><b>AX</b>(<b>AL</b>) &rArr; Приемник</code></td>
+		</tr>
+		<tr>
+			<td><b>STOSB</b></td>
+			<td>Записать байта в строку</td>
+			<td><code><b>AL</b> &rArr; [DI]</code></td>
+		</tr>
+		<tr>
+			<td><b>STOSW</b></td>
+			<td>Чтение слова из строки</td>
+			<td><code><b>AX</b> &rArr; [DI]</code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><ins>Префиксы повторений <b>REPx</b></ins></td>
+		</tr>
+		<tr>
+			<td colspan="2"><b>REP</b></td>
+			<td >Повторять команду</td>
+		</tr>
+		<tr>
+			<td colspan="2"><b>REPE / REPZ</b></td>
+			<td>Повторять команду, пока равно (флаг <b>ZF = 1</b>)</td>
+		</tr>
+		<tr>
+			<td colspan="2"><b>REPNE / REPNZ</b></td>
+			<td>Повторять команду, пока НЕ равно (флаг <b>ZF = 0</b>)</td>
+		</tr>
+	</table></center>
+	<p class="text">
+		В  примере  выполняется  пересылка  <b>20</b>  байт
+		из  <b>STRING1</b>  в <b>STRING2</b>.<br> Предположим, что оба регистра <b>DS</b> и 
+		<b>ES</b>  инициализированы  адресом сегмента данных:
+		<table>
+		<tr>
+			<td><code>STRING1   DB   20 DUP('*')<br>
+			STRING2   DB   20 DUP(' ')</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td align="center"><code>...</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="333px"><code>CLD</code></td>
+			<td><comment>; Сброс флага DF</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV  CX,20</code></td>
+			<td><comment>; Счетчик на 20 байт</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA  DI,STRING2</code></td>
+			<td><comment>; Адрес области "куда"</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA  SI,STRING1</code></td>
+			<td><comment>; Адрес области "откуда"</comment></td>
+		</tr>
+		<tr>
+			<td><code>REP MOVSB </code></td>
+			<td><comment>; Переслать данные</comment></td>
+		</tr>
+	</table></p>
+	
+	<a name="m1"></a>
+	<h2>Обработка одномерных массивов.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+		Для того чтобы обрабатывать массив, нужно знать, где он хранится (его начальный адрес),
+		длину  его элементов и их число. Как и в языке <b>C/C++</b>, имя массива в <b>Ассемблере</b>
+		является также и его начальным адресом.<br><br>
+		Режим адресации с индексацией вида <code>имя_массива[регистр_индекс]</code> 
+    позволяет обрабатывать каждый элемент массива. В качестве <code>регистра__индекса</code> 
+	можно брать любой допустимый для косвенной адресации регистр, например, регистр <b>ВХ</b>.<br><br>
+	<big>Основные характеристики вещественного массива float ArrF[5] в Ассемблере.</big> 
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td><b>Байты в ОЗУ</b></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>...</td>
+			<td>17</td>
+			<td>18</td>
+			<td>19</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Индекс - переменная (i)</td>
+			<td colspan ="4">0</td>
+			<td colspan ="4">1</td>
+			<td>...</td>
+			<td colspan ="4">4</td>
+		</tr>
+		<tr>
+			<td>Элементы массива (значения)</td>
+			<td colspan ="4">ArrF[0]</td>
+			<td colspan ="4">ArrF[1]</td>
+			<td>...</td>
+			<td colspan ="4">ArrF[4]</td>
+		</tr>
+		<tr>
+			<td>Адреса (смещения)</td>
+			<td>ArrF</td>
+			<td>ArrF+1</td>
+			<td>ArrF+2</td>
+			<td>ArrF+3</td>
+			<td colspan="4">...</td>
+			<td>...</td>
+			<td>ArrF+16</td>
+			<td>ArrF+17</td>
+			<td>ArrF+18</td>
+			<td>ArrF+19</td>
+		</tr>
+		<tr>
+			<td>Индекс - регистр (смещение)</td>
+			<td colspan="4">BX<sub>0</sub></td>
+			<td colspan="4">BX<sub>0</sub>+4</td>
+			<td>...</td>
+			<td colspan="4">BX<sub>0</sub>+4*i</td>
+		</tr>
+	</table></center></p><p class="text">
+	В общем случае, если взять в качестве индекс-регистра регистр <b>ВХ</b>, доступ к любому
+	элементу одномерного массива <b>Array [i]</b> длины <b>Larray</b> подчиняется в 
+	<b>Ассемблере</b> следующей закономерности:<br>
+	<code>Array[i] &rArr; Аггау + ВХ<sub>j</sub> = Array[BX<sub>j</sub>]</code>,<br>
+	где<br>
+	<code>ВХ<sub>j</sub> = ВХ<sub>0</sub> + Larray * i = ВХ<sub>j-1</sub> + Larray</code>;<br>
+	<comment>ВХ<sub>0</sub> =0; i=0, ... , n-1; n - длина массива Array</comment>.<br> 
+	<table>
+		<tr>
+			<td><code>model large,С</code><br>
+				<comment>; CopyRight by Голубь Н.Г., 2001</comment><br>
+				<code>LOCALS<br>	
+				.CODE<br>	
+				EXTRN	С A:Word, n:Word, S:DWord<br>
+				PUBLIC	С SummA</code><br><comment>
+				; Синонимы:</comment><br>	
+				<code>a EQU	A[BX]<br></code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>s0 EQU	WORD PTR S</code></td>
+			<td><comment>; мл, часть	суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>s2 EQU	WORD PTR S+2 </code></td>
+			<td><comment>; ст. часть суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>SummA Proc	С far</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>XOR	BX,BX</code></td>
+			<td><comment>; смещение	< ВХ >=0</comment></td>
+		</tr>
+		<tr>
+			<td><code>XOR	SI,SI</code></td>
+			<td><comment>; мл. часть	суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>XOR	DI, DI</code></td>
+			<td><comment>; ст. часть	суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV	CX, N<br>
+			JCXZ	@@4<br>
+			@01:	<br>
+			MOV AX , A	<br>
+			CWD</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>ADD	SI, AX</code></td>
+			<td><comment>; длинное сложение</comment></td>
+		</tr>
+		<tr>
+			<td><code>ADC	DI,DX</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><comment>; переход к след. элементу массива А</comment><br>
+			<code>INC BХ</code>	</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>INC BХ</code></td>
+			<td><comment>; изменение	смещения BX = BX+2</comment></td>
+		</tr>
+		<tr>
+			<td><code>LOOP @01	<br>
+				@04:	<br>
+				MOV	sO,SI<br>
+				MOV	s2,DX<br>
+				RET.	<br>
+				SummA EndP	<br>
+				END</code>	</td>
+			<td></td>
+		</tr>
+	</table></p>
+	
+	<a name="m2"></a>
+	<h2>Двумерные массивы.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Для двухмерных массивов (матриц) идея будет та же самая, только нужно определиться,
+	как такой массив будет располагаться в оперативной памяти: по строкам или по столбцам 
+	(память-то линейная!). Соответственно, и индексных регистров тоже будет два. А также два
+	цикла: внешний и внутренний. Значит, и вычислений прибавится.<br><br>
+	Например, пусть имеется некая матрица <b>Matr[M] [N]</b> и в памяти она располагается 
+	по строкам: сначала <b>N</b> элементов первой строки, потом <b>N</b> второй строки и т.д.<br>
+	Длину элемента обозначим <b>Larr</b>.<br>
+	Тогда адрес элемента <b>Matr[I,j]</b> будет равен <code>Matr+N*i* Larray+j</code>, где 
+	<comment>i=0, ... ,M-1; j=0, ... , N-1</comment>. Выделим в <b>Ассемблере</b> для хранения
+	величины <b>N*i* Larray</b> регистр <b>ВХ</b>, а для <b>j</b> регистр <b>SI</b> (или <b>DI</b>).
+	Тогда <b>Matr[BX]</b> будет означать начальный адрес строки <b>i</b>, a <b>Matr[BX][SI] </b>
+	(<b>Matr[BX+SI]</b> или <b>Matr+[BX+SI]</b> — эти три записи равнозначны) — адрес элемента <b>j</b>
+	в этой строке, т.е.<br>
+    <code> Matr[i j]   -   Matr[BX] [SI]</code><br><br>
+	<big>Основные характеристики целоцисленной матрицы  A[10][5] в Ассемблере.</big> 
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td><b>Байты </b></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>...</td>
+			<td>97</td>
+			<td>98</td>
+			<td>99</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td><b>Столбцы </b></td>
+			<td colspan="2">0</td>
+			<td colspan="2">1</td>
+			<td colspan="2">2</td>
+			<td colspan="2">3</td>
+			<td colspan="2">4</td>
+			<td colspan="2">0</td>
+			<td colspan="2">1</td>
+			<td>...</td>
+			<td colspan="2">3</td>
+			<td colspan="2">4</td>
+		</tr>
+		<tr>
+			<td><b>Индекс - регистр SI </b></td>
+			<td colspan="2">0</td>
+			<td colspan="2">+2</td>
+			<td colspan="2">+4</td>
+			<td colspan="2">+6</td>
+			<td colspan="2">+8</td>
+			<td colspan="2">0</td>
+			<td colspan="2">+2</td>
+			<td>...</td>
+			<td colspan="2">+6</td>
+			<td colspan="2">+8</td>
+		</tr>
+		<tr>
+			<td><b>Строки (i)</b></td>
+			<td colspan ="10">0</td>
+			<td colspan ="4">1</td>
+			<td>1</td>
+			<td colspan ="4">9</td>
+		</tr>
+		<tr>
+			<td><b>Индекс - регистр BX</b></td>
+			<td colspan ="10">0</td>
+			<td colspan ="4">+10</td>
+			<td>+(10*1)</td>
+			<td colspan ="4">+(10*9)=+90</td>
+		</tr>
+	</table></center></p>
+	<p class="text">
+	<table>
+		<tr>
+			<td colspan="2"><code>MODEL LARGE,С</code>
+			<comment>; CopyRight by Голубь H.Г., 2001<br>
+			; Сумма scex элементов матрицы A[] [N]</comment><br>
+			<code>LOCALS	@@<br>
+			.CODE<br>
+			EXTRN	С A: Word, m: Word, n: Word, S:DWord</code></td>
+		</tr>
+		<tr>
+			<td><code>N DW 10</code></td>
+			<td><comment>; 2(длина int)*N=2*5  !!!</comment></td>
+		</tr>
+		<tr>
+			<td><code>PUBLIC C SummA2</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>a EQU A[BX][SI]</code></td>
+			<td><comment>; Двойная индексация !!!</comment></td>
+		</tr>
+		<tr>
+			<td><code>s0 EQU	WORD PTR S</code></td>
+			<td><comment>; мл, часть	суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>s2 EQU	WORD PTR S+2 </code></td>
+			<td><comment>; ст. часть суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>SummA2 Proc	С far</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>XOR	BX,BX</code></td>
+			<td><comment>; смещение	< ВХ >=0 (по строкам)</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV s0,0<br>
+			MOV s2,0</code><br>
+			<comment>; цикл по строкам (внешний)</comment><br>
+			<code>MOV CX,m<br>
+			JCXZ @@4 <br> @@1:</code><br>
+			<comment>; сохранить счетчик ВНЕШНЕГО цикла в стеке</comment><br>
+			<code>PUSH CX</code><br>
+			<comment>; цикл по столбцам (внутренний)</comment></td>
+		</tr>
+		<tr>
+			<td><code>XOR	SI,SI</code></td>
+			<td><comment>; смещение	< SI >=0 (по столбцам)</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV CX,n<br>
+			JCXZ @@4<br>
+			@@2:<br>
+			MOV AX, a<br>
+			CWD</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>ADD	s0, AX</code></td>
+			<td><comment>; длинное сложение</comment></td>
+		</tr>
+		<tr>
+			<td><code>ADC	s2, DX</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><comment>; переход к след. элементу массива А</comment><br>
+			<code>INC SI</code>	</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>INC SI</code></td>
+			<td><comment>; +2(int!!!)</comment></td>
+		</tr>
+		<tr>
+			<td><comment>; изменение	смещения < BX > = < BX > + 2*N
+			<br>; переход на следующую строку</comment><br>
+			<code>ADD BX, N</code><br>
+			<comment>; восстановить счетчик ВНЕШНЕГО цикла из стека</comment><br>
+			<code>POP CX<br>
+			LOOP @@1<br>
+			@@4:<br>
+			RET<br>
+			SummA2 ENDP<br>
+			END</code></td>
+			<td></td>
+		</tr>	
+	</table></p>
+	
+	
+	
+	<p class="stress">	 </p> 
+	<center><b><a class="orange" href="l4.html">Лабораторная работа №4</a></b></center>
+ <!-- страничка -- END -->
+   </div></div></div>
+ 
+      <div id="basement"><div id="basement-content">
+         <div id="basement_text">
+            <br>Программирование на Машинно-Ориентированных Языках.<br>
+			Преподаватель: Коробов С.А.<br><br>
+      </div>
+	  <a class="home2" href="../index.html"><img title="На главную" src="content/home.png"></a>
+	  <a class="book" href="themes_3.html"><img title="К оглавлению" src="content/book.png"></a>
+	  </div>
+	  <a class="min1" href="t13.html"><img title="Предыдущая тема" src="content/left.png"></a>
+	  <a class="max1" href="t12.html"><img title="Следующая тема" src="content/right.png"></a>
+	  </div>
+</body>
+ </html>
