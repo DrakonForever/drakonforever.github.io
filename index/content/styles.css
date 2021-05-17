@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-#header { /*"параметры шапки"*/	
+#header { /*"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ"*/	
   position: fixed ;
   min-width: 100%;
   z-index: 8888;
@@ -26,7 +26,7 @@
   background: url(sut_logo80.png) no-repeat;
 }
 
-#width-page {   							/*задаем "ширину листа"*/
+#width-page {   							/*пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ"*/
   position: absolute;
   margin: 0 auto 0 auto;
   overflow: auto;
@@ -36,7 +36,7 @@
   width: 80%;
 }
 
-#page {									/*"красим лист"*/
+#page {									/*"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ"*/
   position: relative;
   /*min-height: 470px;*/
   margin: 0 auto;
@@ -45,14 +45,14 @@
   background: #ffffff;
 }
 
-#page_content {							/*содержимое листа-стиль*/
+#page_content {							/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ*/
   margin: 0 auto;
   width: 90%;
   padding-bottom: 15px;
   border: 1px solid #ffffff;
 }
 
-#width-page-00 {   							/*задаем "ширину листа00"*/
+#width-page-00 {   							/*пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ00"*/
   
   position: fixed;
   z-index:9999;
@@ -78,13 +78,13 @@
 	color: #ff8000;
 	}
 
-#main_block {							/*фон гл. стр.*/
+#main_block {							/*пїЅпїЅпїЅ пїЅпїЅ. пїЅпїЅпїЅ.*/
   position: relative;
   height: 500px;/*649px;*/
   background: url(fon1-.jpg) no-repeat;
 }
 
-#themes_block {							/*фон стр. тем*/
+#themes_block {							/*пїЅпїЅпїЅ пїЅпїЅпїЅ. пїЅпїЅпїЅ*/
   position: relative;
   height: 500px;/*649px;*/
   background: url(fon2.jpg) no-repeat;
@@ -99,7 +99,7 @@
 
 
 
-/*	Подвал	*/
+/*	пїЅпїЅпїЅпїЅпїЅпїЅ	*/
 #basement {
   position: fixed;
   min-width: 100%;
@@ -124,22 +124,22 @@
   font-family: Arial;
   font-size: 11px;
 }
-/* Подвал -- END */
+/* пїЅпїЅпїЅпїЅпїЅпїЅ -- END */
 
 
 
 
-/*Главное меню--BEGIN*/
-.menu_mainmenu, .menu_mainmenu ul {  				/*убираем "точки"*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ--BEGIN*/
+.menu_mainmenu, .menu_mainmenu ul {  				/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ"*/
         margin: 0;
         padding: 0;
         list-style: none;       
 }
-.menu_mainmenu li {								 /*поддержка смещения выпад меню*/
+.menu_mainmenu li {								 /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
         float: left;
         position: relative;
 }
-.menu_mainmenu a {								 /*стиль ссылок*/
+.menu_mainmenu a {								 /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*/
         float: left;
         padding: 10px 15px 10px 15px;
         color: #dedede;
@@ -148,7 +148,7 @@
         text-decoration: none;
         text-shadow: 0 1px 0 #000;
 }
-.menu_mainmenu ul {								/*"сокращаем до заголовков"*/
+.menu_mainmenu ul {								/*"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"*/
         margin: 20px 0 0 0;
         _margin: 0; /*IE6 only*/
         opacity: 0;
@@ -159,7 +159,7 @@
         z-index: 9999;
         background:#444444;
 }
-.menu_mainmenu ul a {								/*делим ссылки на строки*/
+.menu_mainmenu ul a {								/*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*/
         padding: 10px;
         width: 190px;
         _height: 10px; /*IE6 only*/
@@ -169,16 +169,16 @@
         text-transform: none;
 }
 
-.menu_mainmenu ul a:hover {						/*выделяет выбранную строку*/
+.menu_mainmenu ul a:hover {						/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*/
         background: url(gradient-orange.png) bottom repeat-x #ff9933;
         color: #fff;
 }
-.menu_mainmenu li:hover > ul {						/*раскрываем заголовок*/
+.menu_mainmenu li:hover > ul {						/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
         opacity: 1;
         visibility: visible;
         margin: 0;
 }
-.menu_mainmenu ul li {								/*прорисовываем "границы кнопок"*/
+.menu_mainmenu ul li {								/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"*/
         float: none;
         display: block;
         border: 0;
@@ -188,13 +188,13 @@
         box-shadow: 0 1px 0 #111, 0 2px 0 #666;   
         -ms-box-shadow: 0 1px 0 #111, 0 2px 0 #666;   
 }
-.menu_mainmenu ul li:last-child {					/*прорисовываем "границы кнопок" без излишек*/
+.menu_mainmenu ul li:last-child {					/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none;
 }
 
-.menu_mainmenu ul ul {					/*меню 2+ уровня*/
+.menu_mainmenu ul ul {					/*пїЅпїЅпїЅпїЅ 2+ пїЅпїЅпїЅпїЅпїЅпїЅ*/
         top: 0;
         left: 210px;
         margin: 0 0 0 17px;
@@ -204,12 +204,12 @@
         box-shadow: -1px 0 0 rgba(255,255,255,.3);
 }
 
-/*Главное меню--END*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ--END*/
 
 
 
 
-p.stress {							/*горизонт черта под тему*/
+p.stress {							/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
    border-top: 2px solid #ff9933;
    padding-top: 5px;
    margin-top: 0;
@@ -283,7 +283,22 @@ div.themes h2 {
   font-size: 15px;
   padding-bottom: 10px;
 }
-
+#block-4 {
+  position: absolute; right: 1%; bottom:0% ;
+  margin: 35px;
+  width: 42%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  padding-bottom: 10;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
 #block-name {
   position: absolute; left: 10%; 
   margin: 35px;
@@ -344,7 +359,7 @@ a.book{
 	top: 30px;
 }
 a img {
-    border: none; /* Убираем рамку */
+    border: none; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
 }
 .bonch{
 	position: absolute;
@@ -357,9 +372,9 @@ a img {
 }
 
 acronym {
- cursor:help; /* Курсор мышми со знаком вопроса */
- border-bottom: 1px dotted #ff9933; /* Подчеркивание текста */
- color:#ff9933; /* Цвет текста */
+ cursor:help; /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
+ border-bottom: 1px dotted #ff9933; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
+ color:#ff9933; /* пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
  }
  
  a.none{
