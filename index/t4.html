@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" type="text/css" media="all" href="content/styles.css" />
+<title>Адресация.</title>
+<link rel="shortcut icon" href="content/icon.ico" type="image/x-icon" />
+</head>
+
+<body class="body">
+ <a name="up"></a>
+  <!--шапка-->
+ <div id="header">
+    <div id="header-content">
+		<p class="bonch"> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича<br>
+	    <nobr style="color:#ff8000;">Программирование на Машинно-Ориентированных Языках</nobr>
+	    </p>
+		<a class="home" href="../index.html"><img title="На главную" src="content/home.png" ></a>
+    <div id="main_menu">  
+<!-- Главное Меню -->	  
+<ul class="menu_mainmenu">
+<li><a href="themes_3.html" >Теория (часть 1)</a>
+<ul>
+<li><a href="t1.html" >&diams;Регистры</a>
+	<ul>
+		<li><a href="t1.html#ron" >&diams;Регистры Общего Назначения</a></li>
+		<li><a href="t1.html#ir" >&diams;Индексные Регистры</a></li>
+		<li><a href="t1.html#rs" >&diams;Регистры Сегментов</a></li>
+		<li><a href="t1.html#ru" >&diams;Регистры - Указатели</a></li>
+		<li><a href="t1.html#ruk" >&diams;Регистр Указателя Команд</a></li>
+		<li><a href="t1.html#rf" >&diams;Регистр Флагов</a></li>
+	</ul>
+</li>
+<li><a href="t2.html">&diams;Сегменты, принцип сегментации</a></li>
+<li><a href="t3.html">&diams;Стек</a></li>
+<li><a href="t4.html" >&diams;Адресация</a>
+	<ul>
+		<li><a href="t4.html#ad" >&diams;Адресация данных</a></li>
+		<li><a href="t4.html#ar" >&diams;Режимы адресации</a></li>
+	</ul>
+</li>
+<li><a href="t5.html" >&diams;Организация программы</a>
+	<ul>
+		<li><a href="t5.html#ops" >&diams;Организация программы.Сегменты</a></li>
+		<li><a href="t5.html#mp" >&diams;Модели памяти и упрощенные директивы определения сегментов</a></li>
+		<li><a href="t5.html#dz" >&diams;Директивы задания набора допустимых команд</a></li>
+	</ul>
+</li>		
+<li><a href="t6.html">&diams;Структура программы на языке Ассемблера</a>
+	<ul>
+		<li><a href="t6.html#st" >&diams;Структура программы на языке Ассемблера</a></li>
+		<li><a href="t6.html#com" >&diams;Программа типа СОМ</a></li>
+	</ul>
+</li>
+<li><a href="t7.html" >&diams;Инициализация и описание данных</a></li>
+<li><a href="t8.html" >&diams;Арифметические команды</a>
+	<ul style="top:-235px">
+		<li><a href="t8.html#ks" >&diams;Команды сложения ADD, ADC, INC</a>
+			<ul>
+			<li><a href="t8.html#add" >&diams;ADD</a></li>
+			<li><a href="t8.html#adc" >&diams;ADC</a></li>
+			<li><a href="t8.html#inc" >&diams;INC</a></li>
+			</ul></li>
+		<li><a href="t8.html#kv" >&diams;Команды вычитания SUB, SBB, DEC и NEG</a>
+		<ul>
+			<li><a href="t8.html#kv" >&diams;SUB, SBB, DEC</a></li>
+			<li><a href="t8.html#neg" >&diams;NEG</a></li>
+		</ul></li>
+		<li><a href="t8.html#ku" >&diams;Команды умножения MUL и IMUL</a>
+		<ul>
+			<li><a href="t8.html#mul" >&diams;MUL</a></li>
+			<li><a href="t8.html#imul" >&diams;IMUL</a></li>
+		</ul></li>
+		<li><a href="t8.html#ubc" >&diams;Умножение больших чисел</a></li>
+		<li><a href="t8.html#kd" >&diams;Команды деления DIV и IDIV</a></li>
+		<li><a href="t8.html#pr" >&diams;Преобразование байта в слово и слова
+		в двойное слово</a></li>
+		<li><a href="t8.html#dbc" >&diams;Деление больших чисел</a></li>	
+	</ul>
+</li>
+<li><a href="t9.html" >&diams;Команды передачи управления</a>
+	<ul style="top:-215px">
+		<li><a href="t9.html#jmp" >&diams;Команда безусловного перехода JMP</a></li>
+		<li><a href="t9.html#usl" >&diams;Команды условной передачи управления</a></li>
+		<li><a href="t9.html#znak" >&diams;Знаковые и беззнаковые данные</a></li>
+		<li><a href="t9.html#bzd" >&diams;Переходы для беззнаковых данных</a></li>
+		<li><a href="t9.html#zd" >&diams;Переходы для знаковых данных</a></li>
+		<li><a href="t9.html#sp" >&diams;Специальные арифметические проверки</a></li>
+	</ul>
+</li>
+<li><a href="t80.html" >&diams;Команды сдвигов</a></li>	
+</ul>
+
+ 
+<li><a href="themes_3.html" >Теория (часть 2)</a>
+<ul>
+<li><a href="t81.html">&diams;Команды логических операций</a></li>
+<li><a href="t90.html">&diams;Команды циклов</a></li>
+<li><a href="t91.html">&diams;Работа с подпрограммами</a></li>
+<li><a href="t10.html" >&diams;Операции ввода с клавиатуры и вывода на экран в DOS приложениях</a>
+	<ul>
+		<li><a href="t10.html#output" >&diams;Вывод на экран средствами DOS</a></li>
+		<li><a href="t10.html#input" >&diams;Ввод данных с клавиатуры</a></li>
+		<li><a href="t10.html#str-name" >&diams;Ввод и вывод имен (строк)</a>
+		<ul style="top:-82px"><li><a href="t10.html#str-out" >&diams;Вывод текста запроса</a></li>
+			<li><a href="t10.html#str-in" >&diams;Ввод имени с клавиатуры</a></li>
+			<li><a href="t10.html#str-zv" >&diams;Установка звукового сигнала и ограничителя '$'</a></li>
+			<li><a href="t10.html#str-centr" >&diams;Центрирование и вывод имени на экран</a></li>
+			<li><a href="t10.html#clear" >&diams;Очистить экран</a></li>
+			<li><a href="t10.html#str" >&diams;Установка курсора (строка/столбец)</a></li>
+		</ul></li>
+		<li><a href="t10.html#pr" >&diams;Преобразование строки в число и числа в строку</a>
+		<ul><li><a href="t10.html#asc" >&diams;Преобразование ASCII-формата в двоичный формат</a></li>
+		    <li><a href="t10.html#toAsc" >&diams;Преобразование двоичного формата в ASCII-формат</a></li>
+		</ul></li>	</ul>
+</li>
+<li><a href="t10-2.html" >&diams;Программирование в UNIX</a>
+	<ul style="top:-50px">
+		<li><a href="t10-2.html#pr_unix" >&diams;Программирование в LINUX (первый пример)</a></li>
+		<li><a href="t10-2.html#make" >&diams;Утилита make</a></li>
+		<li><a href="t10-2.html#perem" >&diams;Переменные</a></li>
+		<li><a href="t10-2.html#output" >&diams;Вывод на экран через INT 80H</a></li>
+		<li><a href="t10-2.html#printf" >&diams;Вывод с помощью printf</a></li>
+		<li><a href="t10-2.html#vizov" >&diams;Вызов функций scanf и printf из Nasm</a></li>
+		<li><a href="t10-2.html#arifm" >&diams;Арифметические операции  в формате ASCII</a>
+		<ul style="top:-137px">
+		<li><a href="t10-2.html#sloz" >&diams;Сложение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#vic" >&diams;Вычитание в ASCII-формате</a></li>
+		<li><a href="t10-2.html#umn" >&diams;Умножение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#del" >&diams;Деление в ASCII-формате</a></li>
+		<li><a href="t10-2.html#bcd" >&diams;Двоично-десятичный формат (SCD)</a></li>
+	</ul></li></ul>
+</li>	
+<li><a href="t13.html">&diams;EXE и COM форматы</a>
+	<ul style="top:-171px">
+		<li><a href="t13.html#rp" >&diams;Распределение программы в памяти</a></li>
+		<li><a href="t13.html#exe+com" >&diams;EXE- и COM-программы</a></li>
+		<li><a>&diams;EXE</a>
+		<ul><li><a href="t13.html#exe" >&diams;Заголовок EXE-файла</a></li>
+		<li><a href="t13.html#exe-str" >&diams;Описание структуры заголовка EXE 
+		файла и таблицы расположения сегментов</a></li>
+		</ul></li>
+		<li><a href="t13.html#pzpp" >&diams;Процесс загрузки программ в память</a></li>
+		<li><a href="t13.html#prps" >&diams;Префикс программного сегмента</a></li>
+		<li><a href="t13.html#str-psp" >&diams;Структура PSP</a></li>
+		<li><a href="t13.html#exe-pr" >&diams;EXE-программы</a></li>
+		<li><a href="t13.html#com-pr" >&diams;COM-программы</a></li>
+		<li><a href="t13.html#exit-pr" >&diams;Выход из программы</a></li>
+	</ul>
+</li>
+<li><a href="t11.html" >&diams;Обработка массивов</a>
+	<ul style="top:-36px">
+		<li><a href="t11.html#str" >&diams;Обработка строк</a></li>
+		<li><a href="t11.html#m1" >&diams;Обработка одномерных массивов</a></li>
+		<li><a href="t11.html#m2" >&diams;Двумерные массивы</a></li>
+		</ul>
+</li>	
+<li><a href="t12.html" >&diams;Математический сопроцессор</a>
+	<ul style="top:-190px">
+		<li><a href="t12.html#ms" >&diams;Математический сопроцессор</a></li>
+		<li><a href="t12.html#och" >&diams;Особые числав</a></li>
+		<li><a href="t12.html#reg" >&diams;Регистры</a></li>
+		<li><a href="t12.html#rd" >&diams;Регистры данных</a></li>
+		<li><a href="t12.html#sc" >&diams;Система команд</a></li>
+		<li><a href="t12.html#uoc" >&diams;Условные обозначения для команд базового сопроцессора</a></li>
+		<li><a>&diams;Команды</a><ul>
+			<li><a href="t12.html#cpd" >&diams;Команды пересылки данных</a></li>
+			<li><a href="t12.html#czk" >&diams;Команды загрузки констант</a></li>
+			<li><a href="t12.html#ak" >&diams;Арифметические команды</a></li>
+			<li><a href="t12.html#sak" >&diams;Специальные арифметические команды</a></li>
+		</ul></li></ul>
+</li>	
+<li><a href="t14.html">&diams;Машинные коды</a>
+	<ul style="top:-140px">
+		<li><a href="t14.html#mk" >&diams;Машинные коды</a></li>
+		<li><a href="t14.html#bko" >&diams;Байт кода операции</a></li>
+		<li><a href="t14.html#bsa" >&diams;Байт способа адресации</a></li>
+		<li><a href="t14.html#ra" >&diams;Режимы адресации</a></li>
+		<li><a href="t14.html#pras" >&diams;Примеры ассемблирования</a></li>
+	</ul>
+</li>		
+</ul>
+
+
+<li><a href="themes_1.html" >Практикум</a>
+<ul>
+<li><a href="l1.html" > &diams; Лабораторная Работа №1 </a></li>
+<li><a href="l2.html" > &diams; Лабораторная Работа №2</a></li>
+<li><a href="l3.html" > &diams; Лабораторная Работа №3</a></li>
+<li><a href="l4.html" > &diams; Лабораторная Работа №4</a></li>
+<li><a href="l5.html" > &diams; Лабораторная Работа №5</a></li>
+</ul>  </ul>
+<!-- Главное Меню -- END -->
+</div>
+</div>
+
+</div>
+
+  
+ <!-- страничка-->
+  <div id="width-page-00">
+    <div id="page-00" style=" overflow:  hidden; height:  100%;">
+		<marquee loop="-1" scrollamount="1" behavior="alternate" direction="up" height="100%">
+		А д р е с а ц и я
+		</marquee>
+	</div>
+</div>
+   <div id="width-page">
+      <div id="page">
+		 <div id="page_content">
+            <div class="themes"> 
+	<a name="ad"></a>		
+	<h2>Адресация данных.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+		Для четкого понимания того, как осуществляется адресация данных,
+		проанализируем способ образования адреса операнда. Адрес операнда 
+		формируется по схеме <code>сегмент:смещение</code>. Селектор сегмента
+		можно указать <b>явным</b> или <b>неявным</b> образом. Обычно селектор
+		сегмента загружается в сегментный регистр, а сам регистр выбирается в 
+		зависимости от типа выполняемой операции.<br>
+		<center><table border="1" cellspacing="0" cellpadding="10" width="80%" class="text">
+		<tr>
+			<th width="25%">Тип операции</th>
+			<th width="12%">Регистр сегмента</th>
+			<th width="25%">Сегмент</th>
+			<th>Описание</th>
+		</tr>
+		<tr>
+			<td><b>Команды процессора</b></td>
+			<td>CS</td>
+			<td>Програмный сегмент</td>
+			<td>Используется при вызовах команд процессора.</td>
+		</tr>
+		<tr>
+			<td><b>Обращение к стеку</b></td>
+			<td>SS</td>
+			<td>Сегмент стека</td>
+			<td>Используется во всех операциях со стеком, а также в операциях с 
+			памятью, в которых применяется стек или строка-приемник при выполнении
+			строковых операций.</td>
+		</tr>
+		<tr>
+			<td><b>Локальные данные</b></td>
+			<td>DS</td>
+			<td>Сегмент данных</td>
+			<td>Используется во всех операциях с данными, исключая те, в которых 
+			применяется стек или строка-приемник при выполнении строковых операций.</td>
+		</tr>
+		<tr>
+			<td><b>Строки-приемники</b></td>
+			<td>ES</td>
+			<td>Сегмент данных, адресуемый регистром <b>ES</b></td>
+			<td>Операнд-приемник в строковых операциях.</td>
+		</tr>
+		</table></center>
+	</p>
+	<p class="text">	
+		Процессор автоматически выбирает сегмент в соответствии с условиями,
+		описанными в таблице. При сохранении операнда в памяти или загрузке из
+		памяти в качестве сегментного регистра по умолчанию используется <b>DS</b>,
+		но можно и явным образом указать сегментный регистр, применяемый в 
+		операции.<br><br>
+		Пусть, например, требуется сохранить содержимое регистра <b>ЕАХ</b> в 
+		памяти, адресуемой сегментным регистром <b>ES</b> и смещением, находящимся
+		в регистре <b>ЕВХ</b>. В этом случае можно использовать команду
+		<code>mov	ES:[EBX],EAX</code>
+	</p>
+	<p class="text">
+		Обратите внимание на то, что после имени сегмента указывается символ двоеточия.	
+	</p>
+	
+	<a name="ar"></a>
+	<h2>Режимы адресации.</h2>
+	
+	<p class="stress"></p>
+	<p class="text">
+		В зависимости от местоположения источников образования полного (абсолютного) 
+		адреса в языке ассемблера различают следующие способы адресации операндов:
+	<ul class="text">
+		<li><big><b>Регистровая адресация.</b></big><br>
+		Подразумевает использование в качестве операнда регистра процессора, например:
+		<br><code>PUSH	DS<br>MOV	BP,SP</code></li><br>
+		<li><big><b>Прямая адресация.</b></big><br>
+		При прямой адресации один операнд представляет собой адрес памяти, 
+		второй – регистр: <br><code>MOV	Data,AX</code></li><br>
+		<li><big><b>Непосредственная адресация.</b></big><br>
+		Применяется, когда операнд, длинной в байт или слово находится в
+		ассемблерной команде: <br><code>MOV	AH,4CH</code></li><br>
+		<li><big><b>Косвенная адресация.</b></big><br>
+		При использовании косвенной адресации абсолютный адрес формируется исходя 
+		из сегментного адреса в одном из сегментных регистров и смещения в регистрах
+		<b>BX</b>, <b>BP</b>, <b>SI</b> или <b>DI</b>:<br>
+		<table>
+		<tr>
+			<td width="333px"><code> MOV AL,[BX]</code></td>
+			<td><comment>; База – в DS, смещение – в BX</comment></td>
+		</tr>
+		<tr>
+			<td width="333px"><code> MOV	AX,[BP]</code></td>
+			<td><comment>; База – в SS, смещение – в BP</comment></td>
+		</tr>
+		<tr>
+			<td width="333px"><code> MOV	AX,ES:[SI]
+			</code></td>
+			<td><comment>; База – в ES, смещение – в SI</comment></td>
+		</tr>
+	</table></li><br>		
+		<li><big><b>Базовая адресация.</b></big><br>
+		В случае применения базовой адресации исполнительный адрес является суммой 
+		значения смещения и содержимого регистра <b>BP</b> или <b>BX</b>, например:
+		<table>
+		<tr>
+			<td width="333px"><code> MOV AX,[BP+6]</code></td>
+			<td><comment>; База – SS, смещение – BP+6</comment></td>
+		</tr>
+		<tr>
+			<td width="333px"><code> MOV	DX,8[BX]</code></td>
+			<td><comment>; База – DS, смещение – BX+8</comment></td>
+		</tr>
+	</table></li><br>
+		<li><big><b>Индексная адресация.</b></big><br>
+		При индексной адресации исполнительный адрес определяется как сумма значения 
+		указанного смещения и содержимого регистра <b>SI</b> или <b>DI</b> так же, 
+		как и при базовой адресации, например:<br>
+		<table>
+		<tr>
+			<td width="333px"><code> MOV	DX,[SI+5]</code></td>
+			<td><comment>; База – DS, смещение – SI+5</comment></td>
+		</tr>
+	</table></li><br>
+		<li><big><b>Базово-индексная адресация.</b></big><br>
+		Подразумевает использование для вычисления исполнительного адреса суммы содержимого 
+		базового регистра и индексного регистра, а также смещения, находящегося в операторе,
+		например:<br>
+				<table>
+		<tr>
+			<td width="333px"><code> MOV	BX,[BP][SI]</code></td>
+			<td><comment>; База – SS, смещение – BP+SI</comment></td>
+		</tr>
+		<tr>
+			<td width="333px"><code> MOV	ES:[BX+DI],AX</code></td>
+			<td><comment>; База – ES, смещение – BX+DI;</comment></td>
+		</tr>
+		<tr>
+			<td width="333px"><code> MOV	AX,[BP+6+DI]</code></td>
+			<td><comment>; База – SS, смещение - BP+6+DI</comment></td>
+		</tr>
+	</table></li><br></ul>
+	</p>
+	
+ <!-- страничка -- END -->
+   </div></div></div>
+ 
+      <div id="basement"><div id="basement-content">
+         <div id="basement_text">
+            <br>Программирование на Машинно-Ориентированных Языках.<br>
+			Преподаватель: Коробов С.А.<br><br>
+      </div>
+	  <a class="home2" href="../index.html"><img title="На главную" src="content/home.png"></a>
+	  <a class="book" href="themes_3.html"><img title="К оглавлению" src="content/book.png"></a>
+	  </div>
+	  <a class="min1" href="t3.html"><img title="Предыдущая тема" src="content/left.png"></a>
+	  <a class="max1" href="t5.html"><img title="Следующая тема" src="content/right.png"></a>
+	  </div>  
+</body>
+ </html>

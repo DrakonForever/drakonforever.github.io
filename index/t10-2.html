@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" type="text/css" media="all" href="content/styles.css" />
+<title>Программирование в UNUX.</title>
+<link rel="shortcut icon" href="content/icon.ico" type="image/x-icon" />
+</head>
+
+<body class="body">
+ <a name="up"></a>
+ 
+ 
+ <!--шапка-->
+ <div id="header">
+    <div id="header-content">
+		<p class="bonch"> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича<br>
+	    <nobr style="color:#ff8000;">Программирование на Машинно-Ориентированных Языках</nobr>
+	    </p>
+		<a class="home" href="../index.html"><img title="На главную" src="content/home.png" ></a>
+    <div id="main_menu">  
+<!-- Главное Меню -->	  
+<ul class="menu_mainmenu">
+<li><a href="themes_3.html" >Теория (часть 1)</a>
+<ul>
+<li><a href="t1.html" >&diams;Регистры</a>
+	<ul>
+		<li><a href="t1.html#ron" >&diams;Регистры Общего Назначения</a></li>
+		<li><a href="t1.html#ir" >&diams;Индексные Регистры</a></li>
+		<li><a href="t1.html#rs" >&diams;Регистры Сегментов</a></li>
+		<li><a href="t1.html#ru" >&diams;Регистры - Указатели</a></li>
+		<li><a href="t1.html#ruk" >&diams;Регистр Указателя Команд</a></li>
+		<li><a href="t1.html#rf" >&diams;Регистр Флагов</a></li>
+	</ul>
+</li>
+<li><a href="t2.html">&diams;Сегменты, принцип сегментации</a></li>
+<li><a href="t3.html">&diams;Стек</a></li>
+<li><a href="t4.html" >&diams;Адресация</a>
+	<ul>
+		<li><a href="t4.html#ad" >&diams;Адресация данных</a></li>
+		<li><a href="t4.html#ar" >&diams;Режимы адресации</a></li>
+	</ul>
+</li>
+<li><a href="t5.html" >&diams;Организация программы</a>
+	<ul>
+		<li><a href="t5.html#ops" >&diams;Организация программы.Сегменты</a></li>
+		<li><a href="t5.html#mp" >&diams;Модели памяти и упрощенные директивы определения сегментов</a></li>
+		<li><a href="t5.html#dz" >&diams;Директивы задания набора допустимых команд</a></li>
+	</ul>
+</li>		
+<li><a href="t6.html">&diams;Структура программы на языке Ассемблера</a>
+	<ul>
+		<li><a href="t6.html#st" >&diams;Структура программы на языке Ассемблера</a></li>
+		<li><a href="t6.html#com" >&diams;Программа типа СОМ</a></li>
+	</ul>
+</li>
+<li><a href="t7.html" >&diams;Инициализация и описание данных</a></li>
+<li><a href="t8.html" >&diams;Арифметические команды</a>
+	<ul style="top:-235px">
+		<li><a href="t8.html#ks" >&diams;Команды сложения ADD, ADC, INC</a>
+			<ul>
+			<li><a href="t8.html#add" >&diams;ADD</a></li>
+			<li><a href="t8.html#adc" >&diams;ADC</a></li>
+			<li><a href="t8.html#inc" >&diams;INC</a></li>
+			</ul></li>
+		<li><a href="t8.html#kv" >&diams;Команды вычитания SUB, SBB, DEC и NEG</a>
+		<ul>
+			<li><a href="t8.html#kv" >&diams;SUB, SBB, DEC</a></li>
+			<li><a href="t8.html#neg" >&diams;NEG</a></li>
+		</ul></li>
+		<li><a href="t8.html#ku" >&diams;Команды умножения MUL и IMUL</a>
+		<ul>
+			<li><a href="t8.html#mul" >&diams;MUL</a></li>
+			<li><a href="t8.html#imul" >&diams;IMUL</a></li>
+		</ul></li>
+		<li><a href="t8.html#ubc" >&diams;Умножение больших чисел</a></li>
+		<li><a href="t8.html#kd" >&diams;Команды деления DIV и IDIV</a></li>
+		<li><a href="t8.html#pr" >&diams;Преобразование байта в слово и слова
+		в двойное слово</a></li>
+		<li><a href="t8.html#dbc" >&diams;Деление больших чисел</a></li>	
+	</ul>
+</li>
+<li><a href="t9.html" >&diams;Команды передачи управления</a>
+	<ul style="top:-215px">
+		<li><a href="t9.html#jmp" >&diams;Команда безусловного перехода JMP</a></li>
+		<li><a href="t9.html#usl" >&diams;Команды условной передачи управления</a></li>
+		<li><a href="t9.html#znak" >&diams;Знаковые и беззнаковые данные</a></li>
+		<li><a href="t9.html#bzd" >&diams;Переходы для беззнаковых данных</a></li>
+		<li><a href="t9.html#zd" >&diams;Переходы для знаковых данных</a></li>
+		<li><a href="t9.html#sp" >&diams;Специальные арифметические проверки</a></li>
+	</ul>
+</li>
+<li><a href="t80.html" >&diams;Команды сдвигов</a></li>	
+</ul>
+
+ 
+<li><a href="themes_3.html" >Теория (часть 2)</a>
+<ul>
+<li><a href="t81.html">&diams;Команды логических операций</a></li>
+<li><a href="t90.html">&diams;Команды циклов</a></li>
+<li><a href="t91.html">&diams;Работа с подпрограммами</a></li>
+<li><a href="t10.html" >&diams;Операции ввода с клавиатуры и вывода на экран в DOS приложениях</a>
+	<ul>
+		<li><a href="t10.html#output" >&diams;Вывод на экран средствами DOS</a></li>
+		<li><a href="t10.html#input" >&diams;Ввод данных с клавиатуры</a></li>
+		<li><a href="t10.html#str-name" >&diams;Ввод и вывод имен (строк)</a>
+		<ul style="top:-82px"><li><a href="t10.html#str-out" >&diams;Вывод текста запроса</a></li>
+			<li><a href="t10.html#str-in" >&diams;Ввод имени с клавиатуры</a></li>
+			<li><a href="t10.html#str-zv" >&diams;Установка звукового сигнала и ограничителя '$'</a></li>
+			<li><a href="t10.html#str-centr" >&diams;Центрирование и вывод имени на экран</a></li>
+			<li><a href="t10.html#clear" >&diams;Очистить экран</a></li>
+			<li><a href="t10.html#str" >&diams;Установка курсора (строка/столбец)</a></li>
+		</ul></li>
+		<li><a href="t10.html#pr" >&diams;Преобразование строки в число и числа в строку</a>
+		<ul><li><a href="t10.html#asc" >&diams;Преобразование ASCII-формата в двоичный формат</a></li>
+		    <li><a href="t10.html#toAsc" >&diams;Преобразование двоичного формата в ASCII-формат</a></li>
+		</ul></li>	</ul>
+</li>
+<li><a href="t10-2.html" >&diams;Программирование в UNIX</a>
+	<ul style="top:-50px">
+		<li><a href="t10-2.html#pr_unix" >&diams;Программирование в LINUX (первый пример)</a></li>
+		<li><a href="t10-2.html#make" >&diams;Утилита make</a></li>
+		<li><a href="t10-2.html#perem" >&diams;Переменные</a></li>
+		<li><a href="t10-2.html#output" >&diams;Вывод на экран через INT 80H</a></li>
+		<li><a href="t10-2.html#printf" >&diams;Вывод с помощью printf</a></li>
+		<li><a href="t10-2.html#vizov" >&diams;Вызов функций scanf и printf из Nasm</a></li>
+		<li><a href="t10-2.html#arifm" >&diams;Арифметические операции  в формате ASCII</a>
+		<ul style="top:-137px">
+		<li><a href="t10-2.html#sloz" >&diams;Сложение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#vic" >&diams;Вычитание в ASCII-формате</a></li>
+		<li><a href="t10-2.html#umn" >&diams;Умножение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#del" >&diams;Деление в ASCII-формате</a></li>
+		<li><a href="t10-2.html#bcd" >&diams;Двоично-десятичный формат (SCD)</a></li>
+	</ul></li></ul>
+</li>	
+<li><a href="t13.html">&diams;EXE и COM форматы</a>
+	<ul style="top:-171px">
+		<li><a href="t13.html#rp" >&diams;Распределение программы в памяти</a></li>
+		<li><a href="t13.html#exe+com" >&diams;EXE- и COM-программы</a></li>
+		<li><a>&diams;EXE</a>
+		<ul><li><a href="t13.html#exe" >&diams;Заголовок EXE-файла</a></li>
+		<li><a href="t13.html#exe-str" >&diams;Описание структуры заголовка EXE 
+		файла и таблицы расположения сегментов</a></li>
+		</ul></li>
+		<li><a href="t13.html#pzpp" >&diams;Процесс загрузки программ в память</a></li>
+		<li><a href="t13.html#prps" >&diams;Префикс программного сегмента</a></li>
+		<li><a href="t13.html#str-psp" >&diams;Структура PSP</a></li>
+		<li><a href="t13.html#exe-pr" >&diams;EXE-программы</a></li>
+		<li><a href="t13.html#com-pr" >&diams;COM-программы</a></li>
+		<li><a href="t13.html#exit-pr" >&diams;Выход из программы</a></li>
+	</ul>
+</li>
+<li><a href="t11.html" >&diams;Обработка массивов</a>
+	<ul style="top:-36px">
+		<li><a href="t11.html#str" >&diams;Обработка строк</a></li>
+		<li><a href="t11.html#m1" >&diams;Обработка одномерных массивов</a></li>
+		<li><a href="t11.html#m2" >&diams;Двумерные массивы</a></li>
+		</ul>
+</li>	
+<li><a href="t12.html" >&diams;Математический сопроцессор</a>
+	<ul style="top:-190px">
+		<li><a href="t12.html#ms" >&diams;Математический сопроцессор</a></li>
+		<li><a href="t12.html#och" >&diams;Особые числав</a></li>
+		<li><a href="t12.html#reg" >&diams;Регистры</a></li>
+		<li><a href="t12.html#rd" >&diams;Регистры данных</a></li>
+		<li><a href="t12.html#sc" >&diams;Система команд</a></li>
+		<li><a href="t12.html#uoc" >&diams;Условные обозначения для команд базового сопроцессора</a></li>
+		<li><a>&diams;Команды</a><ul>
+			<li><a href="t12.html#cpd" >&diams;Команды пересылки данных</a></li>
+			<li><a href="t12.html#czk" >&diams;Команды загрузки констант</a></li>
+			<li><a href="t12.html#ak" >&diams;Арифметические команды</a></li>
+			<li><a href="t12.html#sak" >&diams;Специальные арифметические команды</a></li>
+		</ul></li></ul>
+</li>	
+<li><a href="t14.html">&diams;Машинные коды</a>
+	<ul style="top:-140px">
+		<li><a href="t14.html#mk" >&diams;Машинные коды</a></li>
+		<li><a href="t14.html#bko" >&diams;Байт кода операции</a></li>
+		<li><a href="t14.html#bsa" >&diams;Байт способа адресации</a></li>
+		<li><a href="t14.html#ra" >&diams;Режимы адресации</a></li>
+		<li><a href="t14.html#pras" >&diams;Примеры ассемблирования</a></li>
+	</ul>
+</li>		
+</ul>
+
+
+<li><a href="themes_1.html" >Практикум</a>
+<ul>
+<li><a href="l1.html" > &diams; Лабораторная Работа №1 </a></li>
+<li><a href="l2.html" > &diams; Лабораторная Работа №2</a></li>
+<li><a href="l3.html" > &diams; Лабораторная Работа №3</a></li>
+<li><a href="l4.html" > &diams; Лабораторная Работа №4</a></li>
+<li><a href="l5.html" > &diams; Лабораторная Работа №5</a></li>
+</ul>  </ul>
+<!-- Главное Меню -- END -->
+</div>
+</div>
+
+</div>
+
+  
+ <!-- страничка-->
+ <div id="width-page-00">
+    <div id="page-00" style=" overflow:  hidden; height:  100%;">
+		<marquee loop="-1" scrollamount="1" behavior="alternate" direction="up" height="100%">
+			П р о г р а м м и р о в а н и е<p></p>в<p></p>L I N U X 
+		</marquee>
+	</div>
+</div>
+   <div id="width-page">
+      <div id="page">
+		 <div id="page_content">
+            <div class="themes"> 
+	<a name="pr_unix"></a>
+	<h2>Программирование в LINUX (первый пример).</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	<big><ins><b>Си-модуль</ins>:</b></big><br>
+	<code>#include < stdlib.h ><br>
+	#include < stdio.h ><br><br>
+	extern void asm_calc(int,int,int*,int*);<br>
+	int main(void){<br>
+    int i,j,iplusj=0,imulj=0;<br>
+    scanf("%d %d",&i,&j);<br>
+    printf("C  :\t  i+j=%d\n",i+j);<br>
+    printf("C  :\t  i*j=%d\n",i*j);<br>
+    asm_calc(i,j,&iplusj,&imulj);<br>
+    printf("ASM:\t i+j=%d\n",iplusj);<br>
+    printf("ASM:\t i*j=%d\n",imulj);<br>
+    return 0;<br>
+	};</code><br><br>
+	<big><ins><b>ASM-модуль</ins>:</b></big>
+	<table>
+		<tr>
+			<td colspan="2"><code>SECTION .TEXT<br>
+			GLOBAL asm_calc<br>
+			asm_calc:<br></code> <comment>             
+                ; параметры: int i,int j, int* iplusj, int* imulj<br>
+                ; то есть - число 1,число 2, указатель на результат 1, указатель на результат 2<br>
+                ; по правилам вызова С - операнды в стеке.<br>
+                ; [esp] - адрес возврата<br>
+                ; [esp+4] - первый аргумент<br>
+                ; [esp+8] - второй и т.д.<br></comment><code>
+			PUSH EAX<br>PUSH ECX<br>PUSH EBX<br>PUSH EDX<br>
+       </code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="333px"><code>MOV EAX, [ESP+4+4*4] </code></td>
+			<td><comment>; i   &nbsp &nbsp  4*4 - сохранённые в стек регистры </comment></td>
+		</tr>
+		<tr>
+			<td><code> MOV EBX, [ESP+8+4*4] </code></td>
+			<td><comment>; j </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV ECX, [esp+16+4*4] </code></td>
+			<td><comment>; imulj </comment></td>
+		</tr>
+		<tr>
+			<td><code>MUL EBX </code></td>
+			<td><comment>; Результат в edx:eax</comment></td>
+		</tr>
+		<tr>
+			<td><code> MOV [ECX],EAX</code></td>
+			<td><comment>; Результат перемножения заброшен по адресу в ecx </comment></td>
+		</tr>
+		<tr>
+			<td><code><br> MOV ECX, [ESP+12+4*4]  </code></td>
+			<td><br><comment>; iplusj </comment></td>
+		</tr>
+		<tr>
+			<td><code> MOV EAX, [ESP+4+4*4]  </code></td>
+			<td><comment>; i </comment></td>
+		</tr>
+		<tr>
+			<td><code> MOV EBX, [ESP+8+4*4]  </code></td>
+			<td><comment>; j </comment></td>
+		</tr>
+		<tr>
+			<td><code>ADD EAX,EBX<br>
+			MOV [ECX],EAX</code> </td>
+			<td><br><comment>; Результат сложения заброшен туда же - по адресу в ecx </comment><br></td>
+		</tr>
+		<tr>
+			<td><code><br>POP EDX<br>POP EBX<br>POP ECX<br>POP EAX<br>
+			RET <br></code></td>
+			<td></td>
+		</tr>
+	</table></p>
+	<p class="text">
+		<big><ins><b>makefile</ins>:</b></big><br><code>
+		LDFLAGS=-g<br>
+		CFLAGS=-g<br>
+		all: main<br><br>
+		main: main.o asm_file.o<br><br>
+		main.o: main.c<br><br>
+		asm_file.o: asm_file.asm<br>
+		nasm -g -o $@ -f elf $^</code><br><br>
+	</p>
+	
+	<a name="make"></a>
+	<h2>Утилита make.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Задача утилиты <b>make</b> - автоматически определять, какие файлы проекта 
+	были изменены и требуют компиляции, и применять необходимые для этого команды.
+	Хотя примеры применения относятся к использованию утилиты для описания процесса 
+	компиляции программ на языке <B>С/С++</B>, утилита может использоваться для описания 
+	сценариев обновления любых файлов. 
+	</p>
+	<h2>Структура Makefile.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	<b>Мakefile</b> состоит из так называемых <b>"правил"</b>, имеющих вид: 
+	<br><br><code>имя-результата: &nbsp &nbsp исходные-имена ...<br>
+       команды<br> ... <br> ... </code><br><br>
+	<b><ins>имя-результата</ins></b> - это обычно имя файла, генерируемого 
+	программой, например, исполняемый или объектный файл. "Результатом" может 
+	быть действие никак не связанное с процессом компиляции, например, 
+	<b>clean</b> - очистка. <br><br>
+	<b><ins>исходное-имя</ins></b> - это имя файла, используемого на вводе, 
+	необходимое, чтобы создать файл с именем-результата. <br><br>
+	<b><ins>команда</ins></b> - это действие, выполняемое утилитой <b>make</b>.
+	Правило может включать более одной команды, В начале каждой команды надо 
+	вставлять отступ (символ "<b>Tab</b>"). Команда выполняется, если один из 
+	файлов в списке исходные-имена изменился. Допускается написание правила 
+	содержащего команду без указания зависимостей. Например, можно создать 
+	правило "<b>clean</b>", удаляющее объектные файлы проекта, без указания имен. <br><br>
+	Итак, правила объясняют как и в каком случае надо пересобирать определённые файлы проекта. 
+	<br><br>
+	<big><ins><b>Стандартные правила</ins>:</b></big><br>
+	К числу стандартных правил относятся: <ul class="text">
+	<li><ins><b>all</b></ins> - основная задача, компиляция программы. </li><li>
+	<ins><b>install</b></ins> - копирует исполняемые коды программ, библиотеки
+	настройки и всё что необходимо для последующего использования </li><li>
+	<ins><b>uninstall</b></ins> - удаляет компоненты программы из системы </li><li>
+	<ins><b>clean</b></ins> - удаляет из директории проекта все временные и 
+	вспомогательные файлы. </li></ul></p>
+	<p class="text">
+	<big><ins><b>Пример Makefile</ins>:</b></big><br>
+	Ниже приводится простой пример (номера строк добавлены для ясности).<br><code>
+	# Создать исполняемый файл "client"<br>
+     1 client: conn.o<br>
+     2 &nbsp &nbsp g++ client.cpp conn.o -o client<br>
+	 <br># Создать объектный файл "conn.o"<br>
+     3 conn.o: conn.cpp conn.h<br>
+     4 &nbsp &nbsp g++ -c conn.cpp -o conn.o</code><br><br>
+   В этом примере строка, содержащая текст <code>client: conn.o</code>, называется
+   <b>"строкой зависимостей"</b>, а строка <code>g++ client.cpp conn.o -o client</code>
+   называется <b>"правилом"</b> и описывает действие, которое необходимо выполнить.<br><br>
+	<big><b>1</b></big> Задается цель -- исполняемый файл <b>client</b>, который 
+	зависит от объектного файла <b>conn.o</b>;<br>
+	<big><b>2</b></big> Правило для сборки данной цели;<br>
+     <big><b>3</b></big> Задается цель <b>conn.o</b> и файлы, от которых она 
+	 зависит -- <b>conn.cpp</b> и <b>conn.h</b>;<br>
+     <big><b>4</b></big> Описывается действие по сборке цели <b>conn.o</b>.<br><br>
+	Строки, начинающиеся с символа <b>"#"</b>, являются <b><ins>комментариями</ins></b>.<br><br> 
+
+	<big><ins><b>"Ложная" цель</ins>:</b></big><br>	
+	Обычно <b>"ложные"</b> [<b>phony</b>] цели, представляющие <b>"мнимое"</b> имя 
+	целевого файла, используются в случае возникновения конфликтов между именами целей
+	и именами файлов при явном задании имени цели в командной строке. Допустим в 
+	<b>makefile</b> имеется правило, которое не создает ничего, например:<br><code>
+     clean:<br>rm *.o temp</code><br><br>
+	Поскольку команда <b>rm</b> не создает файл с именем <b>clean</b>, то такого 
+	файла никогда не будет создано и поэтому команда <code>make clean</code> всегда 
+	будет срабатывать.<br><br>
+
+	<big><ins><b>Декларация .PHONY</ins>:</b></big><br>		
+	Однако, данное правило не будет работать, если в текущем каталоге
+   будет существовать файл с именем <b>clean</b>. Поскольку цель <b>clean</b>
+   не имеет зависимостей, то она никогда не будет считаться устаревшей и,
+   соответственно, команда '<code>rm *.o temp</code>' никогда не будет выполнена. (при
+   запуске <b>make</b> проверяет даты модификации целевого файла и тех файлов, от 
+   которых он зависит. И если цель оказывается "старше", то <b>make</b> выполняет
+   соответствующие команды-правила ) Для  устранения подобных проблем предназначена 
+   специальная декларация <b>.PHONY</b>, объявляющая "ложную" цель. Например:<br><code>
+     .PHONY : clean</code><br><br>
+   Таким образом мы указываем необходимость исполнения цели, при явном ее указании,
+   в виде <code>make clean</code> вне зависимости от того существует файл с таким именем или нет.
+	<br><br>
+	</p>
+	
+	<a name="perem"></a>
+	<h2>Переменные.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	 Определить переменную в <b>makefile</b> вы можете следующим образом:<br>
+     <code>$VAR_NAME=value</code><br><br>
+	В соответствии с соглашениями имена переменных задаются в верхнем регистре:<br>
+     <code>$OBJECTS=main.o test.o</code><br><br>
+   Чтобы получить значение переменной, необходимо ее имя заключить в круглые 
+   скобки и перед ними поставить символ <b>'$'</b>, например:<br><code>
+     $(VAR_NAME)</code><br><br>
+   В <b>makefile</b>-ах существует два типа переменных: "<b>упрощенно вычисляемые</b>" и
+   "<b>рекурсивно вычисляемые</b>". В рекурсивно вычисляемых переменных все ссылки
+   на другие переменные будут замещены их значениями, например:<br><code>
+     TOPDIR=/home/tedi/project<br>
+     SRCDIR=$(TOPDIR)/src</code><br><br>
+   При обращении к переменной <b>SRCDIR</b> вы получите значение<br><code>
+   /home/tedi/project/src.</code><br><br>
+   Однако рекурсивные переменные могут быть вычислены не всегда, например
+   следующие определения:<br><code>
+     CC = gcc -o
+<br>     CC = $(CC) -O2</code><br><br>
+   выльются в бесконечный цикл. Для разрешения этой проблемы следует
+   использовать "<b>упрощенно вычисляемые</b>" переменные:<code><br>
+     CC := gcc -o
+ <br>    CC += $(CC) -O2<br></code><br>
+   Где символ '<b>:=</b>' создает переменную <b>CC</b> и присваивает
+   ей значение "<b>gcc -o</b>". А символ '<b>+=</b>' добавляет "<b>-O2</b>"
+   к значению переменной <b>CC</b>.<br>
+	</p>
+	
+	<a name="output"></a>
+	<h2>Вывод на экран через INT 80H.</h2>
+	<p class="stress">	 </p> 
+	
+	<table>
+		<tr>
+			<td width="333px"><code>SECTION .TEXT	<br>			
+			GLOGAL _start	<br><br>
+			_start:<br><br>	
+			MOV EAX,15<br>
+			MOV EBX,20<br>
+			MUL EBX<br>
+			CMP	EAX,300<br>
+			JNZ	error<br>
+			all_ok: <br></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV EDX,len1</code></td>
+			<td><comment>; third argument:  message length </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV ECX,msg1 </code></td>
+			<td><comment>; second argument:  pointer to message to write </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV EBX,1  </code></td>
+			<td><comment>; first argument:  file handle (stdout) </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV EAX,4 </code></td>
+			<td><comment>; system call number (sys_write)</comment></td>
+		</tr>
+		<tr>
+			<td><code>INT 0x80</code></td>
+			<td><comment>; call kernel </comment></td>
+		</tr>
+		<tr>
+			<td><code>JMP exit1<br>
+			error: MOV EDX,len2</code></td>
+			<td><br><comment>; third argument:  message length </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV  ECX,msg2</code></td>
+			<td><comment>; second argument:  pointer to message to write </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV  EBX,1 </code> </td>
+			<td><comment>; first argument: file  handle (stdout) </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV EAX,4 </code></td>
+			<td><comment>; system call number (sys_write) </comment></td>
+		</tr>
+		<tr>
+			<td><code>INT 0x80	</code></td>
+			<td> <comment>; call kernel </comment></td>
+		</tr>
+		<tr>
+			<td><code>JMP exit1<br>exit1:</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV EBX,0	</code> </td>
+			<td><comment>; first syscall argument: exit code </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV  EAX,1  </code></td>
+			<td><comment>; system call number  (sys_exit) </comment></td>
+		</tr>
+		<tr>
+			<td><code>INT 0x80	</code></td>
+			<td><comment>; call kernel </comment></td>
+		</tr>
+		<tr>
+			<td><code><br>SECTION .DATA<br> </code></td>
+			<td><br><comment> ; section declaration </comment><br></td>
+		</tr>
+		<tr>
+			<td><code><br>msg1  DB  "All OK!",0xa</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>len1     EQU     $ - msg1 </code></td>
+			<td><comment>; length of our string </comment></td>
+		</tr>
+		<tr>
+			<td><code>msg2	DB	"Error!",0xa	<br>
+			len2	EQU 	 $ - msg2</code></td>
+			<td></td>
+		</tr>
+	</table>
+<p class="text">
+	<big><ins><b>makefile</ins>:</b></big><br>	
+	<code>all:main<br><br>
+	main: main.o<br>
+	ld -s -o main main.o<br><br>
+	main.o:main.asm<br>
+	nasm -f elf $^<br><br>
+	clean:<br>
+	rm main *.o</code><br>
+	</p>
+	
+	<a name="printf"></a>
+	<h2>Вывод с помощью printf.</h2>
+	<p class="stress">	 </p> 
+	<table>
+		<tr>
+			<td width="333px"><code>EXTERN printf<br>
+			SECTION .TEXT </code></td>
+			<td><br><comment>; section declaration </comment></td>
+		</tr>
+		<tr>
+			<td><code><br> GLOBAL main<br>main:<br></code>
+			<br><comment>; write our string to stdout </comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV 	EAX,15<br>
+			PUSH EAX<br>
+			PUSH DWORD msg<br>
+			CALL   printf<br>
+			ADD ESP,8<br></code>
+			<br><comment>; and exit </comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV EBX,0</code></td>
+			<td><comment>; first syscall argument: exit code </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV EAX,1 </code></td>
+			<td><comment>; system call number (sys_exit) </comment></td>
+		</tr>
+		<tr>
+			<td><code>INT  0x80 </code></td>
+			<td><comment>; call kernel </comment></td>
+		</tr>
+		<tr>
+			<td><code><br>SECTION .DATA	<br></code></td>
+			<td><br><comment>; section declaration </comment><br></td>
+		</tr>
+		<tr>
+			<td colspan="2"><code>msg DB "And the number in eax=%d",0xa,0x0</code></td>
+			<td></td>
+		</tr>
+	</table>
+<p class="text">
+<big><ins><b>makefile</ins>:</b></big><br>	
+<code>LDFLAGS=-g<br>
+all:main<br><br>
+main: main.o
+<br><br>main.o:main.asm
+<br>nasm -g -f elf $^
+<br><br>clean:
+	<br>rm main *.o</code><br>
+	</p>
+	
+	<a name="vizov"></a>
+	<h2>Вызов функций scanf и printf из Nasm.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Функции <b>scanf</b> и <b>printf</b> определены в библиотеке <b>glibc</b>.
+	Эти функции можно указать в ассемблерной программе как внешние с 
+	помощью директивы <b>EXTERN</b>. Объектный файл получается стандартным
+	образом. А вот при компоновке (линковке) необходимо указать библиотеку 
+	<b>libc.so</b> либо использовать для компоновки <b>gcc</b>, который, 
+	в отличие от <b>ld</b> по умолчанию компонует все объектные файлы с
+	библиотекой <b>libc.so</b><br><br><code> 
+global _start</code>
+<br><br><comment>
+;Объявляем используемые внешние функции из libc</comment><br><code>
+EXTERN exit<br>
+EXTERN puts<br>
+EXTERN scanf<br>
+EXTERN printf<br><br></code>
+<comment>;Сегмент кода:</comment><br>
+<code>SECTION .TEXT</code><br><br> 
+<comment>;Функция main:</comment><br>
+<code>_start:</code><br><br>
+<comment>;Параметры передаются в стеке:</comment><br>
+<code>PUSH DWORD msg<br>
+CALL puts</code></br><br> 
+<comment>;По конвенции Си вызывающая процедура должна<br>
+;очищать стек от параметров самостоятельно:</comment><br>
+<code>SUB ESP, 4<br><br>
+PUSH DWORD a<br>
+PUSH DWORD b<br>
+PUSH DWORD msg1<br>
+CALL scanf<br>
+SUB ESP, 12<br>
+MOV EAX, DWORD [a]<br>
+ADD EAX, DWORD [b]<br><br>
+PUSH eax<br>
+PUSH DWORD msg2<br><br>
+CALL printf<br>
+ADD ESP, 8</code><br><br>
+<comment>;Завершение программы с кодом выхода 0:</comment><br>
+<code>PUSH DWORD 0<br>
+CALL exit<br><br>
+RET</code><br><br>
+<comment>;Сегмент инициализированных данных</comment><br>
+<code>SECTION .DATA<br>
+msg  : DB "An example of interfacing with GLIBC.",0xA,0<br>
+msg1 : DB "%d%d",0<br>
+msg2 : DB "%d", 0xA, 0</code><br><br>
+<comment>; Сегмент неинициализированных данных</comment><br>
+<code>SECTION .BSS<br>
+a RESD 1<br>
+b RESD 1</code><br>
+</p>
+	
+	<a name="arifm"></a>
+	<h2>Арифметические операции  в формате ASCII.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Данные, вводимые с клавиатуры,  имеют <b>ASCII-формат</b>,  например, цифры <b>1234</b> -
+шест.<b>31323334</b>. Для выполнения арифметических   операций   над   числовыми значениями, 
+   такими    как шест.<b>31323334</b>, требуется специальная обработка.<br><br>
+     С  помощью  следующих    ассемблерных    команд    можно    выполнять
+арифметические операции непосредственно над числами в <b>ASCII</b>-формате:
+<ul class="text"><li>
+<big>AAA</big> (ASCII Adjust for Addition - коррекция для сложения <b>ASCII</b>-кода)</li><li>
+<big>AAD</big> (ASCII Adjust for Division - коррекция для деления <b>ASCII</b>-кода)</li><li>
+<big>AAM</big> (ASCII Adjust for Multiplication - коррекция для умножения <b>ASCII</b>-кода)</li><li>
+<big>AAS</big> (ASCII Adjust for Subtraction - коррекция для вычитания <b>ASCII</b>-кода)</li></ul></p>
+<p class="text">
+Эти команды кодируются без операндов и выполняют автоматическую  коррекцию
+в регистре <b>AX</b>.  Коррекция необходима, так как <b>ASCII</b>-код  представляет  так
+называемый распакованный десятичный формат,  в  то  время,  как  компьютер
+выполняет арифметические операции в двоичном формате.<br><br>	
+	</p>
+	
+	<a name="sloz"></a>
+	<h2>Сложение в ASCII-формате.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+     Рассмотрим процесс сложения чисел <b>8</b> и <b>4</b> в <b>ASCII</b>-формате:<br>
+	 <center><table class="text">
+		<tr>
+			<td>Шест.</td>
+			<td>38</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>34</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>---</td>
+		</tr>
+		<tr>
+			<td>Шест.</td>
+			<td>6C</td>
+		</tr>
+</table></center></p>
+<p class="text">
+Полученная сумма  неправильна  ни  для  <b>ASCII</b>-формата,  ни  для  двоичного
+формата.  Однако, игнорируя левую <b>6</b> и прибавив <b>6</b> к правой шест. <b>C</b>: 
+шест.<b>C + 6</b>  =  шест.<b>12</b>  -  получим  правильный  результат  в  десятичном   формате.
+Правильный пример слегка упрощен,  но  он  хорошо  демонстрирует  процесс,
+который выполняет команда <b>AAA</b> при коррекции.<br><br>
+В качестве примера, предположим, что регистр <b>AX</b> содержит шест.<b>0038</b>, а регистр 
+<b>BX</b>   -   шест.<b>0034</b>.  Числа  <b>38</b>  и  <b>34</b>  представляют  два 
+ байта  в <b>ASCII</b>-формате, которые необходимо сложить. Сложение и коррекция кодируется
+ следующими командами:<br><br><code>
+               ADD  AL,BL </code> &nbsp &nbsp <comment>; Сложить 34 и 38</comment><br><code>   
+               AAA   </code> &nbsp &nbsp &nbsp &nbsp &nbsp <comment>; Коррекция для сложения ASCII-кодов </comment><br><br>            
+
+	Команда <b>AAA</b> проверяет правую шест. цифру (<b>4</b> бита) в регистре <b>AL</b>.  Если эта
+	цифра находится между <b>A</b> и <b>F</b>  или  флаг  <b>AF</b>  равен  <b>1</b>,  то  к  регистру 
+	<b>AL</b> прибавляется  <b>6</b>,  а  к  регистру  <b>AH</b>  прибавляется  <b>1</b>,  флаги  <b>AF</b>
+	и    <b>CF</b> устанавливаются в <b>1</b>. Во всех случаях команда <b>AAA</b> устанавливает в  <b>0</b>
+	левую шест. цифру в регистре <b>AL</b>. Результат - в регистре <b>AX</b>:<br><br>
+<b>
+               После команды ADD:  006C<br>
+               После команды AAA:  0102<br><br></b>
+
+	 Для  того,  чтобы  выработать   окончательное    <b>ASCII</b>-представление, достаточно 
+	 просто поставить тройки на место левых шест. цифр:<br><br><b>
+
+               OR   AX,3030H  ;Результат 3132</b><br><br>
+
+        Все  показанное  выше  представляет  сложение  однобайтовых    чисел.
+	Сложение многобайтных  <b>ASCII</b>-чисел  требует  организации  цикла,  который выполняет обработку 
+	справа налево с учетом переноса.  В примере складываются  два  трехбайтовых  <b>ASCII</b>-числа  в 
+	четырехбайтовую сумму. Обратите внимание на следующее:
+	<table>
+		<tr>
+			<td colspan="2"><code>CODESG  SEGMENT<br>
+			ASSUME  CS:CODESG,DS:CODESG,SS:CODESG<br>
+			ORG     100H<br>
+			BEGIN:  JMP     SHORT MAIN<br></code><comment>
+			; ---------------------------------------------------------------</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="333px"><code>ASC1    DB      '578'  </code></td>
+			<td><comment>  ; Элементы данных</comment></td>
+		</tr>
+		<tr>
+			<td><code>ASC2    DB      '694' <br>
+			ASC3    DB      '0000' <br> </code><comment>
+			; ---------------------------------------------------------------</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MAIN    PROC    NEAR<br>CLC</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>LEA     SI,AASC1+2 </code></td>
+			<td><comment> ; Адреса ASCII-чисел</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     DI,AASC2+2<br>
+			LEA     BX,AASC1+3</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     CX,03   </code></td>
+			<td> <comment> ; Выполнить 3 цикла</comment></td>
+		</tr>
+		<tr>
+			<td><code>A20:<br>
+			MOV     AH,00    </code></td>
+			<td><br><comment>  ; Очистить регистр AH</comment></td>
+		</tr>
+		<tr>
+			<td> <code> MOV     AL,[SI]    </code></td>
+			<td><comment>  ; Загрузить ASCII-байт</comment></td>
+		</tr>
+		<tr>
+			<td><code>ADC     AL,[DI]   </code></td>
+			<td><comment>  ; Сложение (с переносом)</comment></td>
+		</tr>
+		<tr>
+			<td><code>AAA </code> </td>
+			<td><comment>  ; Коррекция для ASCII</comment></td>
+		</tr>
+		<tr>
+			<td> <code>MOV     [BX],AL   </code></td>
+			<td> <comment>  ; Сохранение суммы</comment></td>
+		</tr>
+		<tr>
+			<td><code>DEC     SI<br>
+			DEC     DI<br>
+			DEC     BX</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>LOOP    A20 </code></td>
+			<td><comment>  ; Циклиться 3 раза</comment></td>
+		</tr>
+		<tr>
+			<td> <code> MOV     [BX],AH   </code> </td>
+			<td><comment> ; Сохранить перенос</comment></td>
+		</tr>
+		<tr>
+			<td><code>RET<br>
+			MAIN    ENDP<br>
+			CODESG  ENDS<br>
+			END     BEGIN</code></td>
+			<td></td>
+		</tr>
+	</table>
+	<p class="text">
+	В программе используется команда <b>ADC</b>,  так как любое  сложение может  вызвать 
+	перенос,  который  должен быть прибавлен к следующему (слева) байту. Команда <b>CLC</b> 
+	устанавливает флаг <b>CF</b> в нулевое состояние.<br><br>
+        Команда <b>MOV</b> очищает регистр <b>AH</b> в каждом цикле, так как команда <b>AAA</b>
+		может прибавить к нему единицу.  Команда <b>ADC</b> учитывает  пеpеносы. Заметьте,  
+		что  использование команд <b>XOR</b> или <b>SUB</b> для oчистки регистра <b>AH</b> изменяет флаг <b>CF</b>.
+         Когда    завершается   каждый   цикл,   происходит   пересылка содержимого pегистра <b>AH</b> (<b>00</b> или <b>01</b>)
+		 в левый байт суммы.<br>
+        В  результате  получается сумма в виде <b>01020702</b>.  Программа не использует команду <b>OR</b>
+		после команды <b>AAA</b> для занесения  левой  тройки, так как  при  этом  устанавливается  флаг  
+		<b>CF</b>,  что изменит pезультат
+       команды <b>ADC</b>.  Одним из решений в данном  случае  является  сохранение флагового регистра
+	   с помощью команды <b>PUSHF</b>, выполнение команды <b>OR</b>, и, затем, восстановление флагового регистра 
+	   командой <b>POPF</b>:
+	   <table>
+		<tr>
+			<td width = "333px"><code> ADC  AL,[DI] </code> </td>
+			<td><comment>; Сложение с переносом </comment></td>
+		</tr>
+		<tr>
+			<td><code> AAA </code></td>
+			<td><comment>; Коррекция для ASCII </comment></td>
+		</tr>
+		<tr>
+			<td><code> PUSHF </code></td>
+			<td><comment>; Сохранение флагов </comment></td>
+		</tr>
+		<tr>
+			<td><code>OR   AL,30H </code> </td>
+			<td><comment>; Запись левой тройки</comment></td>
+		</tr>
+		<tr>
+			<td><code>POPF </code> </td>
+			<td> <comment>; Восстановление флагов </comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV  [BX],AL </code></td>
+			<td><comment>; Сохранение суммы </comment></td>
+		</tr>
+	</table></p>
+<p class="text">
+       Вместо команд <b>PUSHF</b> и <b>POPF</b> можно использовать команды <b>LAHF</b> 
+	   (Load  AH with Flags загрузка флагов в регистр  <b>AH</b>)  и  <b>SAHF</b>  (Store  
+	   AH  in  Flagregister - запись флагов из регистра <b>AH</b> во флаговый регистр). 
+	   Команда <b>LAHF</b> загружает в регистр <b>AH</b>  флаги <b> SF,  ZF,  AF,  PF  и  CF</b>;
+	   а  команда  <b>SAHF</b> записывает  содержимое  регистра  <b>AH</b>  в  указанные  флаги. 
+	   В  приведенном примере,  однако,  регистр  <b>AH</b>  уже  используется    для  
+	   арифметических переполнений. Другой способ вставки троек для получения <b>ASCII</b>-кодов цифр
+	   - организовать обработку суммы командой <b>OR</b> в цикле.<br>
+	</p>
+	
+	<a name="vic"></a>
+	<h2>Вычитание в ASCII-формате.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+		Команда <b>AAS</b> (ASCII Adjust for Subtraction - коррекция  для  вычитания ASCII-кодов)
+		выполняется aналогично команде <b> AAA</b>.  Команда <b> AAS</b>  проверяет правую шест.
+		цифру (четыре бита) в регистре <b>AL</b>. Если эта цифра лежит между <b>A</b> и <b>F</b> или 
+		флаг <b>AF</b> равен <b>1</b>,  то из регистра <b>AL</b> вычитается <b>6</b>,  а из регистра
+	<b>AH</b>  вычитается  <b>1</b>,  флаги  <b>AF</b>  и  <b>CF</b> устанавливаются в <b>1</b>. 
+	Во всех случаях команда <b>AAS</b> устанавливает в <b>0</b> левую шест.цифру в регистpе <b>AL</b>.<br><br>
+        В следующих двух примерах  предполагается,  что  поле  <b>ASC1</b>  содержит шест.<b>38</b>,
+		а поле <b>ASC2</b> - шест.<b>34</b>:
+	<table class="text">
+		<tr>
+			<td width = "222px"><ins><big> Пример 1</ins>:</big></td>
+			<td width = "100px">&nbsp &nbspAX</td>
+			<td>AF</td>
+		</tr>
+		<tr>
+			<td><code>MOV  AL,ASC1</code></td>
+			<td><comment>; 0038</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>SUB  AL,ASC2</code></td>
+			<td><comment>; 0034</comment></td>
+			<td><comment>0</comment></td>
+		</tr>
+		<tr>
+			<td><code>AAS</code></td>
+			<td><comment>; 0004</comment></td>
+			<td><comment>0</comment></td>
+		</tr>
+	</table><br>
+	<table class="text">
+		<tr>
+			<td width = "222px"><ins><big> Пример 2</ins>:</big></td>
+			<td width = "100px">&nbsp &nbspAX</td>
+			<td>AF</td>
+		</tr>
+		<tr>
+			<td><code>MOV  AL,ASC2</code></td>
+			<td><comment>; 0034</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>SUB  AL,ASC1</code></td>
+			<td><comment>; 00FC</comment></td>
+			<td><comment>1</comment></td>
+		</tr>
+		<tr>
+			<td><code>AAS</code></td>
+			<td><comment>; FF06</comment></td>
+			<td><comment>1</comment></td>
+		</tr>
+	</table></p>
+    <p class="text">            
+	В примере <b>1</b> команде <b>AAS</b> не требуется выполнять коррекцию. 
+	В примере <b>2</b>, так как правая цифра в регистре <b>AL</b> равна шест.<b>C</b>,
+	команда  <b>AAS</b>  вычитает  <b>6</b>  из регистра <b>AL</b> и <b>1</b> из регистра
+	<b>AH</b>  и  устанавливает  в  <b>1</b>  флаги  <b>AF</b>  и  <b>CF</b>. Результат 
+	(который должен быть равен <b>-4</b>) имеет шест.  представление  <b>FF06</b>, т.е.
+	десятичное дополнение числа <b>-4</b>.
+	</p>
+	
+	<a name="umn"></a>
+	<h2>Умножение в ASCII-формате.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	 	Команда  <b>AAM</b>  (ASCII  Adjust  for  Multiplication  -  коррекция   для умножения <b>ASCII</b>-кодов)  
+		выполняет   корректировку   результата умножения <b>ASCII</b>-кодов  в  регистре <b>AX</b>.
+		Однако,  шест.  Цифры должны быть очищены от троек  и  полученные  данные  уже  не 
+		будут   являться   действительными <b>ASCII</b>-кодами.  (В  руководствах  фирмы  <b>IBM</b>  для 
+		таких данных используется термин <ins><b>pаспакованный десятичный формат</b></ins>).  Например,  число
+		в <b>ASCII</b>-формате <b>31323334</b>  имеет  распакованное  десятичное  представление <b>01020304</b>. 
+		Кроме этого,  надо помнить, что коррекция осуществляется только для одного байта за 
+		одно выполнение,  поэтому можно умножать только oднобайтные поля. Для более длинных
+		полей необходима организация цикла.
+<br><br>
+	Команда <b>AAM</b> делит содержимое регистра <b>AL</b> на <b>10</b> (шест.<b>0A</b>) и записывает
+частное в регистр <b>AH</b>,  а остаток в <b>AL</b>.  Предположим,  что  в  регистре  <b>AL</b>
+содержится шест.<b>35</b>,  а в регистре <b>CL</b> - шест.<b>39</b>. <br><br>Следующие команды умножают
+содержимое  регистра  <b>AL</b>  на  содержимое  <b>CL</b>  и  преобразуют  результат  в
+<b>ASCII</b>-формат:
+	<table>
+		<tr>
+			<td width="175px"></td>
+			<td width="250px"></td>
+			<td class="text">AX:</td>
+		</tr>
+		<tr>
+			<td><code>AND  CL,0FH</code></td>
+			<td><comment>; Преобразовать CL в 09</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>AND  AL,0FH</code></td>
+			<td><comment>; Преобразовать AL в 05</comment></td>
+			<td><comment>0005</comment></td>
+		</tr>
+		<tr>
+			<td><code>MUL  CL</code></td>
+			<td><comment>; Умножить AL на CL</comment></td>
+			<td><comment>002D</comment></td>
+		</tr>
+		<tr>
+			<td><code>AAM </code></td>
+			<td><comment>; Преобразовать в распак.дес.</comment></td>
+			<td><comment>0405</comment></td>
+		</tr>
+		<tr>
+			<td><code>OR   AX,3030H</code></td>
+			<td><comment>; Преобразовать в ASCII-ф-т</comment></td>
+			<td><comment>3435</comment></td>
+		</tr>
+</table></p>
+ <p class="text">
+Команда <b>MUL</b> генерирует <b>45</b> (шест.<b>002D</b>) в регистре <b>AX</b>,  после  чего  команда
+<b>AAM</b> делит это значение на <b>10</b>, записывая частное <b>04</b> в регистр <b>AH</b> и  остаток
+<b>05</b> в регистр <b>AL</b>.  Команда <b>OR</b> преобpазует  затем  распакованное  десятичное
+число в <b>ASCII</b>-формат.<br><br>
+
+Следующий пример  демонстрирует умножение четырехбайтового множимого на однобайтовый  множитель.<br><br> 
+ Так как команда <B>AAM</B> может иметь дело только с однобайтовыми  числами,  то  в   программе
+организован   цикл,   который обрабатывает  байты  справа  налево.  Окончательный  результат 
+умножения в данном примере - <b>0108090105</b>.<br><br>
+Если множитель больше одного байта, то необходимо обеспечить еще один цикл,  который  
+обрабатывает  множитель.  В  этом  случае   проще    будет преобразовать число из 
+<b>ASCII</b>-формата  в  двоичный  формат.
+
+	<table>
+		<tr>
+			<td colspan="2"><code>CODESG  SEGMENT<br>
+			ASSUME  CS:CODESG,DS:CODESG,SS:CODESG<br>
+			ORG     100H<br>
+			BEGIN:  JMP     MAIN</code><br><comment>
+			; ---------------------------------------------------------------</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="333px"><code>MULTCND DB   '3783'</code></td>
+			<td><comment>; Элементы данных</comment></td>
+		</tr>
+		<tr>
+			<td><code>MULTPLR DB      '5'<br>
+			PRODUCT DB      5 DUP(0)</code><br><comment>
+			; ---------------------------------------------------------------</comment>
+			<br><code>MAIN    PROC    NEAR</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     CX,04</code></td>
+			<td><comment>; 4 цикла</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     SI,MULTCND+3<br>
+			LEA     DI,PRODUCT+4</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>AND     MULTPLR,0FH</code></td>
+			<td><comment>; Удалить ASCII-тройку</comment></td>
+		</tr>
+		<tr>
+			<td><code>A20:</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     AL,[SI]</code> </td>
+			<td><comment>; Загрузить ASCII-символ</comment></td>
+		</tr>
+		<tr>
+			<td><code>AND     AL,OFH</code></td>
+			<td><comment>; Удалить ASCII-тройку</comment></td>
+		</tr>
+		<tr>
+			<td><code>MUL     MULTPLR</code></td>
+			<td><comment>; Умножить</comment></td>
+		</tr>
+		<tr>
+			<td><code> AAM</code></td>
+			<td><comment>; Коррекция для ASCII</comment></td>
+		</tr>
+		<tr>
+			<td><code>ADD     AL,[DI]</code></td>
+			<td><comment>; Сложить с</comment></td>
+		</tr>
+		<tr>
+			<td> <code>AAA</code></td>
+			<td><comment>; записанным</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV     [DI],AL</code></td>
+			<td><comment>; произведением <br> </comment></td>
+		</tr>
+		<tr>
+			<td><code>DEC     DI</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     [DI],AH</code></td>
+			<td><comment>; Записать перенос</comment></td>
+		</tr>
+		<tr>
+			<td><code>DEC     SI </code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>LOOP    A20</code></td>
+			<td><comment>; Циклиться 4 раза </comment></td>
+		</tr>
+		<tr>
+			<td> <code>RET<br>
+			MAIN    ENDP<br>
+			CODESG  ENDS<br>
+			END     BEGIN</code></td>
+			<td></td>
+		</tr>
+	</table>
+
+	
+	<a name="del"></a>
+	<h2>Деление в ASCII-формате.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Команда <b>AAD</b>  (ASCII  Adjust  for  Division  -  коррекция  для деления 
+	<b>ASCII</b>-кодов)    выполняет    корректировку    <b>ASCII</b>-кода
+    делимого    до непосредственного деления. Однако, прежде необходимо 
+	очистить левые тройки <b>ASCII</b>-кодов для получения распакованного
+	десятичного формата.  Команда <b>AAD</b> может оперировать с двухбайтовыми
+	делимыми в регистре <b>AX</b>. Предположим, что регистр <b>AX</b> содержит
+	делимое <b>3238</b> в <b>ASCII</b>-формате  и  регистр  <b>CL</b>  содержит
+	делитель  <b>37</b> также в <b>ASCII</b>-формате. <br><br> Следующие команды
+	выполняют коррекцию для последующего деления:
+
+	<table>
+		<tr>
+			<td width ="175px"><code>AND  CL,0FH</code></td>
+			<td width = "250px"><comment>; Преобразовать CL в распак.дес.</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>AND  AX,0F0FH </code></td>
+			<td><comment>; Преобразовать AX в распак.дес.</comment></td>
+			<td><comment>0208</comment></td>
+		</tr>		
+		<tr>
+			<td><code>AAD </code></td>
+			<td><comment>; Преобразовать в двоичный</comment></td>
+			<td><comment>001C</comment></td>
+		</tr>
+		<tr>
+			<td><code>DIV  CL  </code></td>
+			<td><comment>; Разделить на 7 </comment></td>
+			<td><comment>0004</comment></td>
+		</tr>
+	</table></p>
+	<p class="text">
+	Команда <b>AAD</b> умножает содержимое <b>AH</b> на <b>10</b> (шест.<b>0A</b>),
+	прибавляет  pезультат <b>20</b> (шест.<b>14</b>) к регистру <b>AL</b> и 
+	очищает регистр <b>AH</b>.  Значение <b>001C</b> есть шест. представление
+	десятичного  числа  <b>28</b>.  Делитель   может    быть    только однобайтовый
+	от <b>01</b> до <b>09</b>.
+	<table>
+		<tr>
+			<td colspan="2"><code>CODESG  SEGMENT<br>
+			ASSUME  CS:CODESG,DS:CODESG,SS:CODESG<br>
+			ORG     100H<br>
+			BEGIN:  JMP     SHORT MAIN</code><br><comment>
+			; ---------------------------------------------------------------</comment></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>DIVDND  DB      '3698'</code></td>
+			<td><comment>; Элементы данных</comment></td>
+		</tr>
+		<tr>
+			<td><code>DIVSOR  DB      '4'<br>
+			QUOTNT  DB      4 DUP(0)</code><br><comment>
+			; ---------------------------------------------------------------</comment>
+			<br><code>MAIN    PROC    NEAR</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     CX,04 </code></td>
+			<td><comment>; 4 цикла</comment></td>
+		</tr>
+		<tr>
+			<td><code>SUB     AH,AH </code></td>
+			<td><comment>; Стереть левый байт делимого</comment></td>
+		</tr>
+		<tr>
+			<td> <code>AND     DIVSOR,0FH</code></td>
+			<td><comment>; Стереть ASCII 3 в делителе</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     SI,DIVDND<br>
+			LEA     DI,QUOTNT<br>
+			A20:</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     AL,[SI]</code></td>
+			<td><comment>; Загрузить ASCII байт<br>; (можно LODSB)</comment></td>
+		</tr>
+		<tr>
+			<td><code>AND     AL,0FH</code></td>
+			<td><comment>; Стереть ASCII тройку</comment></td>
+		</tr>
+		<tr>
+			<td><code>AAD</code></td>
+			<td><comment>; Коррекция для деления</comment></td>
+		</tr>
+		<tr>
+			<td><code>DIV     DIVSOR</code></td>
+			<td><comment>; Деление</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV     [DI],AL</code></td>
+			<td><comment>; Сохранить частное</comment></td>
+		</tr>
+		<tr>
+			<td><code>INC     SI<br>
+			INC     DI</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>LOOP    A20 </code></td>
+			<td><comment>; Циклиться 4 раза</comment></td>
+		</tr>
+		<tr>
+			<td><code>RET<br>
+			MAIN    ENDP<br>
+			CODEGS  ENDS<br></code></td>
+			<td></td>
+		</tr>
+	</table></p>
+	
+	<a name="bcd"></a>
+	<h2>ДВОИЧНО-ДЕСЯТИЧНЫЙ ФОРМАТ (BCD).</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	В предыдущем примере деления в <b>ASCII</b>-формате  было  получено  частное
+<b>00090204</b>. Если сжать это значение, сохраняя только  правые  цифры  каждого
+байта, то получим <b>0924</b>. Такой формат называется <ins><b>двоично-десятичным</b></ins> (<b>BCD</b>  -
+Binary Coded Decimal) или <ins><b>упакованным</b></ins>.  Он  содержит  только  десятичные
+цифры от <b>0</b> до <b>9</b>. Длина двоично-десятичного представления в два раза меньше
+<b>ASCII</b>-представления.<br>
+     Заметим, однако, что десятичное число  <b>0924</b>  имеет  основание  <b>10</b>  и,
+будучи преобразованным в основание <b>16</b> (т.е. в шест.  представление),  даст
+шест.<b>039C</b>.<br>
+     Можно выполнять  сложение  и  вычитание  чисел  в  двоично-десятичном
+представлении (BCD-формате).  Для этих целей  имеются  две  корректиpующих
+команды:
+<br><br>
+<b>DAA</b>  (Decimal Adjustment for Addition - десятичная коррекция для сложения)<br>
+<b>DAS</b>  (Decimal Adjustment for Subtraction - десятичн. коррекция для вычит.)<br><br>
+
+Обработка  полей  также  осуществляется  по  одному  байту  за   одно выполнение.
+ В примере  программы выполняется преобразование   чисел  из  <b>ASCII</b>-формата
+ в  <b>BCD</b>-формат  и  сложение  их.<br><br>
+	Процедура  <b>B10CONV</b>  преобразует  <b>ASCII</b>  в  <b>BCD</b>.  
+	Обработка   чисел   может выполняться как справа налево,  так и слева
+	направо. Кроме того, обработка слов проще,  чем обработка байтов, 
+	так как  для  генерации  одного  байта <b>BCD</b>-кода  требуется  два  байта
+	<b>ASCII</b>-кода.  Ориентация на обработку слов требует четного 
+	количества байтов в <b>ASCII</b>-поле.<br><br>
+     Процедура  <b>C10ADD</b>  выполняет   сложение    чисел    в    
+	 <b>BCD</b>-формате. Окончательный результат - <b>127263</b>.
+	
+	<table>
+		<tr>
+			<td colspan="2"><code>
+			CODESG  SEGMENT PARA "Code"<br>
+			ASSUME  CS:CODESG,DS:CODESG,SS:CODESG<br>
+			ORG     100H<br>
+			BEGIN:  JMP     SHORT MAIN<br></code><comment>
+			; ---------------------------------------------------------------</comment><br>
+			<code>ASC1    DB      '057836'<br>
+			ASC2    DB      '069427'<br>
+			BCD1    DB      '000'<br>
+			BCD2    DB      '000'<br>
+			BCD3    DB      4 DUP(0)<br></code><comment>
+			; ---------------------------------------------------------------</comment><br>
+			<code>MAIN    PROC    NEAR</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="333px"><code>LEA     SI,ASC1+4</code></td>
+			<td><comment>; Инициализировать для ASC1</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     DI,BCD1+2</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td> <code>CALL    B10CONV</code></td>
+			<td><comment>; Вызвать преобразование</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     SI,ASC2+4 </code></td>
+			<td><comment>; Инициализировать для ASC2</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA     DI,BCD2+2</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>CALL    B10CONV</code></td>
+			<td><comment>; Вызвать преобразование</comment></td>
+		</tr>
+		<tr>
+			<td><code>CALL    C10ADD</code></td>
+			<td><comment>; Вызвать сложение</comment></td>
+		</tr>
+		<tr>
+			<td><code> RET<br>
+			MAIN    ENDP</code><br><br>
+			<comment>; Преобразование ASCII в BCD:<br>
+			; ---------------------------------------------------------------</comment><br>
+			<code>B10CONV PROC</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     CL,04</code></td>
+			<td><comment>; Фактор сдвига</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV     DX,03</code></td>
+			<td><comment>; Число слов</comment></td>
+		</tr>
+		<tr>
+			<td><code>В20:</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV     AX,[SI]</code></td>
+			<td><comment>; Получить ASCII-пapy</comment></td>
+		</tr>
+		<tr>
+			<td><code>XCHG    AH,AL</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>SHL     AL,CL</code></td>
+			<td><comment>; Удалить тройки</comment></td>
+		</tr>
+		<tr>
+			<td><code>SHL     AX,CL</code></td>
+			<td><comment>; ASCII-кода</comment></td>
+		</tr>
+		<tr>
+			<td> <code>MOV     [DI],AH </code></td>
+			<td><comment>; Записать BCD-цифру</comment></td>
+		</tr>
+		<tr>
+			<td><code> DEC     SI<br>
+			DEC     SI<br>
+			DEC     DI<br>
+			DEC     DX<br>
+			JNZ     В20<br>
+			RET<br>
+			B10CONV ENDP</code><br><br><comment>
+			; Сложение BCD-чисел:<br>
+			; ---------------------------------------------------------------</comment><br>
+			<code>C10ADD PROC</code><br></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td> <code>XOR      AН,AН</code></td>
+			<td><comment>; 0чистить AН</comment></td>
+		</tr>
+		<tr>
+			<td> <code>LEA      SI,BCD1+2 </code> </td>
+			<td><comment>; Инициализация</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA      DI,BCD2+2</code></td>
+			<td><comment>; BCD</comment></td>
+		</tr>
+		<tr>
+			<td><code>LEA      BX,BCD3+3</code></td>
+			<td><comment>; адресов</comment></td>
+		</tr>
+		<tr>
+			<td><code>MOV      CX,03 </code> </td>
+			<td><comment>; Трехбайтные поля</comment></td>
+		</tr>
+		<tr>
+			<td><code>CLC<br>С20:</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>MOV      AL,[SI] </code></td>
+			<td><comment>; Получить BCD1 (или LODSB)</comment></td>
+		</tr>
+		<tr>
+			<td><code>ADC      AL,[DI]</code></td>
+			<td><comment>; Прибавить BCD2</comment></td>
+		</tr>
+		<tr>
+			<td><code>DAA</code></td>
+			<td><comment>; Десятичная коррекция</comment></td>
+		</tr>
+		<tr>
+			<td> <code>MOV      [BX],AL</code></td>
+			<td><comment>; 3аписать в BCD3</comment></td>
+		</tr>
+		<tr>
+			<td><code>DEC      SI<br>
+			DEC      DI<br>
+			DEC      BX</code></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>LOOP     С20</code></td>
+			<td><comment>; Цикл 3 раза</comment></td>
+		</tr>
+		<tr>
+			<td><code>RET<br>
+			C10ADD ENDP<br><br>
+			CODESG ENDS<br>
+			END      BEGIN<br></code></td>
+			<td></td>
+		</tr>
+	</table></p>
+	
+	<p class="stress">	 </p> 
+	<center><b><a class="orange" href="l3.html">Лабораторная работа №3</a></b></center>
+ <!-- страничка -- END -->
+   </div></div></div>
+ 
+      <div id="basement"><div id="basement-content">
+         <div id="basement_text">
+            <br>Программирование на Машинно-Ориентированных Языках.<br>
+			Преподаватель: Коробов С.А.<br><br>
+      </div>
+	  <a class="home2" href="../index.html"><img title="На главную" src="content/home.png"></a>
+	  <a class="book" href="themes_3.html"><img title="К оглавлению" src="content/book.png"></a>
+	  </div>
+	  <a class="min1" href="t10.html"><img title="Предыдущая тема" src="content/left.png"></a>
+	  <a class="max1" href="t13.html"><img title="Следующая тема" src="content/right.png"></a>
+	  </div>    
+</body>
+ </html>

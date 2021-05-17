@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" type="text/css" media="all" href="content/styles.css" />
+<title>Математический сопроцессор.</title>
+<link rel="shortcut icon" href="content/icon.ico" type="image/x-icon" />
+</head>
+
+<body class="body">
+ <a name="up"></a>
+ 
+ 
+ <!--шапка-->
+ <div id="header">
+    <div id="header-content">
+		<p class="bonch"> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича<br>
+	    <nobr style="color:#ff8000;">Программирование на Машинно-Ориентированных Языках</nobr>
+	    </p>
+		<a class="home" href="../index.html"><img title="На главную" src="content/home.png" ></a>
+    <div id="main_menu">  
+<!-- Главное Меню -->	  
+<ul class="menu_mainmenu">
+<li><a href="themes_3.html" >Теория (часть 1)</a>
+<ul>
+<li><a href="t1.html" >&diams;Регистры</a>
+	<ul>
+		<li><a href="t1.html#ron" >&diams;Регистры Общего Назначения</a></li>
+		<li><a href="t1.html#ir" >&diams;Индексные Регистры</a></li>
+		<li><a href="t1.html#rs" >&diams;Регистры Сегментов</a></li>
+		<li><a href="t1.html#ru" >&diams;Регистры - Указатели</a></li>
+		<li><a href="t1.html#ruk" >&diams;Регистр Указателя Команд</a></li>
+		<li><a href="t1.html#rf" >&diams;Регистр Флагов</a></li>
+	</ul>
+</li>
+<li><a href="t2.html">&diams;Сегменты, принцип сегментации</a></li>
+<li><a href="t3.html">&diams;Стек</a></li>
+<li><a href="t4.html" >&diams;Адресация</a>
+	<ul>
+		<li><a href="t4.html#ad" >&diams;Адресация данных</a></li>
+		<li><a href="t4.html#ar" >&diams;Режимы адресации</a></li>
+	</ul>
+</li>
+<li><a href="t5.html" >&diams;Организация программы</a>
+	<ul>
+		<li><a href="t5.html#ops" >&diams;Организация программы.Сегменты</a></li>
+		<li><a href="t5.html#mp" >&diams;Модели памяти и упрощенные директивы определения сегментов</a></li>
+		<li><a href="t5.html#dz" >&diams;Директивы задания набора допустимых команд</a></li>
+	</ul>
+</li>		
+<li><a href="t6.html">&diams;Структура программы на языке Ассемблера</a>
+	<ul>
+		<li><a href="t6.html#st" >&diams;Структура программы на языке Ассемблера</a></li>
+		<li><a href="t6.html#com" >&diams;Программа типа СОМ</a></li>
+	</ul>
+</li>
+<li><a href="t7.html" >&diams;Инициализация и описание данных</a></li>
+<li><a href="t8.html" >&diams;Арифметические команды</a>
+	<ul style="top:-235px">
+		<li><a href="t8.html#ks" >&diams;Команды сложения ADD, ADC, INC</a>
+			<ul>
+			<li><a href="t8.html#add" >&diams;ADD</a></li>
+			<li><a href="t8.html#adc" >&diams;ADC</a></li>
+			<li><a href="t8.html#inc" >&diams;INC</a></li>
+			</ul></li>
+		<li><a href="t8.html#kv" >&diams;Команды вычитания SUB, SBB, DEC и NEG</a>
+		<ul>
+			<li><a href="t8.html#kv" >&diams;SUB, SBB, DEC</a></li>
+			<li><a href="t8.html#neg" >&diams;NEG</a></li>
+		</ul></li>
+		<li><a href="t8.html#ku" >&diams;Команды умножения MUL и IMUL</a>
+		<ul>
+			<li><a href="t8.html#mul" >&diams;MUL</a></li>
+			<li><a href="t8.html#imul" >&diams;IMUL</a></li>
+		</ul></li>
+		<li><a href="t8.html#ubc" >&diams;Умножение больших чисел</a></li>
+		<li><a href="t8.html#kd" >&diams;Команды деления DIV и IDIV</a></li>
+		<li><a href="t8.html#pr" >&diams;Преобразование байта в слово и слова
+		в двойное слово</a></li>
+		<li><a href="t8.html#dbc" >&diams;Деление больших чисел</a></li>	
+	</ul>
+</li>
+<li><a href="t9.html" >&diams;Команды передачи управления</a>
+	<ul style="top:-215px">
+		<li><a href="t9.html#jmp" >&diams;Команда безусловного перехода JMP</a></li>
+		<li><a href="t9.html#usl" >&diams;Команды условной передачи управления</a></li>
+		<li><a href="t9.html#znak" >&diams;Знаковые и беззнаковые данные</a></li>
+		<li><a href="t9.html#bzd" >&diams;Переходы для беззнаковых данных</a></li>
+		<li><a href="t9.html#zd" >&diams;Переходы для знаковых данных</a></li>
+		<li><a href="t9.html#sp" >&diams;Специальные арифметические проверки</a></li>
+	</ul>
+</li>
+<li><a href="t80.html" >&diams;Команды сдвигов</a></li>	
+</ul>
+
+ 
+<li><a href="themes_3.html" >Теория (часть 2)</a>
+<ul>
+<li><a href="t81.html">&diams;Команды логических операций</a></li>
+<li><a href="t90.html">&diams;Команды циклов</a></li>
+<li><a href="t91.html">&diams;Работа с подпрограммами</a></li>
+<li><a href="t10.html" >&diams;Операции ввода с клавиатуры и вывода на экран в DOS приложениях</a>
+	<ul>
+		<li><a href="t10.html#output" >&diams;Вывод на экран средствами DOS</a></li>
+		<li><a href="t10.html#input" >&diams;Ввод данных с клавиатуры</a></li>
+		<li><a href="t10.html#str-name" >&diams;Ввод и вывод имен (строк)</a>
+		<ul style="top:-82px"><li><a href="t10.html#str-out" >&diams;Вывод текста запроса</a></li>
+			<li><a href="t10.html#str-in" >&diams;Ввод имени с клавиатуры</a></li>
+			<li><a href="t10.html#str-zv" >&diams;Установка звукового сигнала и ограничителя '$'</a></li>
+			<li><a href="t10.html#str-centr" >&diams;Центрирование и вывод имени на экран</a></li>
+			<li><a href="t10.html#clear" >&diams;Очистить экран</a></li>
+			<li><a href="t10.html#str" >&diams;Установка курсора (строка/столбец)</a></li>
+		</ul></li>
+		<li><a href="t10.html#pr" >&diams;Преобразование строки в число и числа в строку</a>
+		<ul><li><a href="t10.html#asc" >&diams;Преобразование ASCII-формата в двоичный формат</a></li>
+		    <li><a href="t10.html#toAsc" >&diams;Преобразование двоичного формата в ASCII-формат</a></li>
+		</ul></li>	</ul>
+</li>
+<li><a href="t10-2.html" >&diams;Программирование в UNIX</a>
+	<ul style="top:-50px">
+		<li><a href="t10-2.html#pr_unix" >&diams;Программирование в LINUX (первый пример)</a></li>
+		<li><a href="t10-2.html#make" >&diams;Утилита make</a></li>
+		<li><a href="t10-2.html#perem" >&diams;Переменные</a></li>
+		<li><a href="t10-2.html#output" >&diams;Вывод на экран через INT 80H</a></li>
+		<li><a href="t10-2.html#printf" >&diams;Вывод с помощью printf</a></li>
+		<li><a href="t10-2.html#vizov" >&diams;Вызов функций scanf и printf из Nasm</a></li>
+		<li><a href="t10-2.html#arifm" >&diams;Арифметические операции  в формате ASCII</a>
+		<ul style="top:-137px">
+		<li><a href="t10-2.html#sloz" >&diams;Сложение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#vic" >&diams;Вычитание в ASCII-формате</a></li>
+		<li><a href="t10-2.html#umn" >&diams;Умножение в ASCII-формате</a></li>
+		<li><a href="t10-2.html#del" >&diams;Деление в ASCII-формате</a></li>
+		<li><a href="t10-2.html#bcd" >&diams;Двоично-десятичный формат (SCD)</a></li>
+	</ul></li></ul>
+</li>	
+<li><a href="t13.html">&diams;EXE и COM форматы</a>
+	<ul style="top:-171px">
+		<li><a href="t13.html#rp" >&diams;Распределение программы в памяти</a></li>
+		<li><a href="t13.html#exe+com" >&diams;EXE- и COM-программы</a></li>
+		<li><a>&diams;EXE</a>
+		<ul><li><a href="t13.html#exe" >&diams;Заголовок EXE-файла</a></li>
+		<li><a href="t13.html#exe-str" >&diams;Описание структуры заголовка EXE 
+		файла и таблицы расположения сегментов</a></li>
+		</ul></li>
+		<li><a href="t13.html#pzpp" >&diams;Процесс загрузки программ в память</a></li>
+		<li><a href="t13.html#prps" >&diams;Префикс программного сегмента</a></li>
+		<li><a href="t13.html#str-psp" >&diams;Структура PSP</a></li>
+		<li><a href="t13.html#exe-pr" >&diams;EXE-программы</a></li>
+		<li><a href="t13.html#com-pr" >&diams;COM-программы</a></li>
+		<li><a href="t13.html#exit-pr" >&diams;Выход из программы</a></li>
+	</ul>
+</li>
+<li><a href="t11.html" >&diams;Обработка массивов</a>
+	<ul style="top:-36px">
+		<li><a href="t11.html#str" >&diams;Обработка строк</a></li>
+		<li><a href="t11.html#m1" >&diams;Обработка одномерных массивов</a></li>
+		<li><a href="t11.html#m2" >&diams;Двумерные массивы</a></li>
+		</ul>
+</li>	
+<li><a href="t12.html" >&diams;Математический сопроцессор</a>
+	<ul style="top:-190px">
+		<li><a href="t12.html#ms" >&diams;Математический сопроцессор</a></li>
+		<li><a href="t12.html#och" >&diams;Особые числав</a></li>
+		<li><a href="t12.html#reg" >&diams;Регистры</a></li>
+		<li><a href="t12.html#rd" >&diams;Регистры данных</a></li>
+		<li><a href="t12.html#sc" >&diams;Система команд</a></li>
+		<li><a href="t12.html#uoc" >&diams;Условные обозначения для команд базового сопроцессора</a></li>
+		<li><a>&diams;Команды</a><ul>
+			<li><a href="t12.html#cpd" >&diams;Команды пересылки данных</a></li>
+			<li><a href="t12.html#czk" >&diams;Команды загрузки констант</a></li>
+			<li><a href="t12.html#ak" >&diams;Арифметические команды</a></li>
+			<li><a href="t12.html#sak" >&diams;Специальные арифметические команды</a></li>
+		</ul></li></ul>
+</li>	
+<li><a href="t14.html">&diams;Машинные коды</a>
+	<ul style="top:-140px">
+		<li><a href="t14.html#mk" >&diams;Машинные коды</a></li>
+		<li><a href="t14.html#bko" >&diams;Байт кода операции</a></li>
+		<li><a href="t14.html#bsa" >&diams;Байт способа адресации</a></li>
+		<li><a href="t14.html#ra" >&diams;Режимы адресации</a></li>
+		<li><a href="t14.html#pras" >&diams;Примеры ассемблирования</a></li>
+	</ul>
+</li>		
+</ul>
+
+
+<li><a href="themes_1.html" >Практикум</a>
+<ul>
+<li><a href="l1.html" > &diams; Лабораторная Работа №1 </a></li>
+<li><a href="l2.html" > &diams; Лабораторная Работа №2</a></li>
+<li><a href="l3.html" > &diams; Лабораторная Работа №3</a></li>
+<li><a href="l4.html" > &diams; Лабораторная Работа №4</a></li>
+<li><a href="l5.html" > &diams; Лабораторная Работа №5</a></li>
+</ul>  </ul>
+<!-- Главное Меню -- END -->
+</div>
+</div>
+</div>
+  
+  
+ <!-- страничка-->
+<div id="width-page-00">
+    <div id="page-00" style=" overflow:  hidden; height:  100%;">
+		<marquee loop="-1" scrollamount="1" behavior="alternate" direction="up" height="100%">
+		М а т е м а т и ч е с к и й<p> </p>с о п р о ц е с с о р 
+		</marquee>
+	</div>
+</div>
+ 
+   <div id="width-page">
+      <div id="page">
+		 <div id="page_content">
+            <div class="themes"> 
+	<a name="ms"></a>
+	<h2>Математический сопроцессор.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Для  обработки данных с плавающей точкой служит специальное устройство — 
+	<big><b><ins>математический сопроцессор</b> (FPU — Floating Point Unit)</big></ins>.
+	С момента своего возникновения сопроцессор расширял вычислительные возможности
+	основного процессора <b>i8086</b> (<b>i80286, i80386, i80486</b>) и сначала был 
+	выполнен в виде отдельной микросхемы <b>i8087</b> (<b>i80287, i80387, i80487</b>).<br>
+	<ins><big>Его присутствие в первых моделях процессора было не обязательным.</big></ins><br>
+	Если сопроцессора не было, то его команды можно было эмулировать программным путем,
+	что немного ухудшало производительность основного процессора. <ins><big>Начиная с семейства процессоров
+	<b>i486DX</b>, сопроцессор стал составной частью основного процессора</big></ins>.<br><br>
+	Современный сопроцессор обеспечивает полную поддержку стандартов <b>IEEE-754</b> и 
+	<b>IEEE-854</b> по представлению и обработке чисел с плавающей точкой. Он может 
+	выполнять трансцендентные операции (вычисление тригонометрических функций, логарифмов
+	и проч.) с большой точностью.<br><br>
+	<ins><big>Сопроцессор выполняет все вычисления в 80-битном расширенном вещественном формате</big></ins>, а <b>16-,
+	32-, 64</b>-битные данные используются для обмена данными и могут применяться в командах сопроцессора
+	как операнды (приемник или источник).<br><br>
+	<big><ins>Типы обычных данных сопроцессора. </ins></big>
+	<table align="center" border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td width="100px" align="center"><b>Тип данных</b></td>
+			<td width="40px" align="center"><b>Длина (бит)</b></td>
+			<td width="60px" align="center"><b>Количество значащих цифр</b></td>
+			<td align="center"><b>Диапазон представления</b></td>
+		</tr>
+		<tr>
+			<td><b>Целое слово</b></td>
+			<td align="center">16</td>
+			<td align="center">4-5</td>
+			<td>-32768 &hellip; 32767</td>
+		</tr>
+		<tr>
+			<td><b>Короткое целое</b></td>
+			<td align="center">32</td>
+			<td align="center">9-10</td>
+			<td>-2147483648 &hellip; 2147483647</td>
+		</tr>
+		<tr>
+			<td><b>Длинное целое </b></td>
+			<td align="center">64</td>
+			<td align="center">18-19</td>
+			<td>-9223372036854775808 &hellip; 9223372036854775807</td>
+		</tr>
+		<tr>
+			<td><b>Упакованное двоично-десятичное</b></td>
+			<td align="center">80</td>
+			<td align="center">18</td>
+			<td>-999999999999999999 &hellip; 999999999999999999</td>
+		</tr>
+		<tr>
+			<td><b>Короткое вещественное </b></td>
+			<td align="center">32</td>
+			<td align="center">7-8</td>
+			<td>1.175494351e-38 &hellip; 3.402823466e+38</td>
+		</tr>
+		<tr>
+			<td><b>Длинное вещественное </b></td>
+			<td align="center">64</td>
+			<td align="center">15-16</td>
+			<td>2.2250738585072014e-307 &hellip; 1.7976931348623158+308</td>
+		</tr>
+		<tr>
+			<td><b>Расширенное вещественное </b></td>
+			<td align="center">80</td>
+			<td align="center">19-20</td>
+			<td>3.3621031431431120935063e-4932 &hellip; 1.189731495357231765e+4932</td>
+		</tr>
+	</table></p>
+	<a name="och"></a>
+	<h2>Особые числа.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Кроме обычных чисел, спецификация стандарта <b>IEEE</b> предусматривает несколько 
+	специальных форматов, которые могут получиться в результате выполнения математических
+	операций сопроцессора.<ul class="text">
+	<li><b>Положительный ноль</b> — все биты числа сброшены в ноль.</li>
+	<li><b>Отрицательный ноль</b> — знаковый бит равен <b>1</b>, остальные биты числа сброшены в ноль.</li>
+	<li><b>Положительная бесконечность</b> — знаковый бит равен <b>0</b>, все биты экспоненты установлены
+	в <b>1</b>, а биты мантиссы сброшены в <b>0</b>.</li>
+	<li><b>Отрицательная бесконечность</b> — знаковый бит равен <b>1</b>, все биты экспоненты 
+	установлены в <b>1</b>, а биты мантиссы сброшены в <b>0</b>.</li>
+	<li><b>Денормализованные числа</b> — все биты экспоненты сброшены в <b>0</b>. Эти числа 
+	позволяют представлять очень маленькие числа при вычислениях с расширенной точностью.</li>
+	<li><b>Неопределенность</b> — знаковый бит равен <b>1</b>, первый бит мантиссы равен <b>1</b>
+	(для <b>80</b>-разрядных чисел первые два бита равны <b>11</b>), остальные биты мантиссы
+	сброшены в ноль, все биты экспоненты установлены в <b>1</b>.</li>
+	<li><b>He-число типа SNAN </b>(сигнальное)</li>
+	<li><b>Не-число типа QNAN </b>(тихое)</li>
+	<li><b>Неподдерживаемое число</b> — все остальные ситуации</li></ul></p>
+	
+	<a name="reg"></a>
+	<h2>Регистры: 8-дынные, 5-вспомогательные.</h2>
+	<p class="stress">	 </p> <p>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td rowspan="2"><b>Назначение регистров</b></td>
+			<td colspan="16"><b>Биты</b></td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>14</td>
+			<td>13</td>
+			<td>12</td>
+			<td>11</td>
+			<td>10</td>
+			<td>9</td>
+			<td>8</td>
+			<td>7</td>
+			<td>6</td>
+			<td>5</td>
+			<td>4</td>
+			<td>3</td>
+			<td>2</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td><b> CWR </b></td>
+			<td colspan="16"> Регистр управления (<b>Control Word Register</b>)</td>
+		</tr>
+		<tr>
+			<td><b> SWR </b></td>
+			<td colspan="16"> Регистр состояния сопроцессора (<b>Status Word Register</b>)</td>
+		</tr>
+		<tr>
+			<td><b> TWR </b></td>
+			<td colspan="16"> Слово признаков-тегов (<b>Tags Word Register</b>)</td>
+		</tr>
+		<tr>
+			<td><b> FIP (32 бита)</b></td>
+			<td colspan="16"> Регистр указателя последней выполненной команды (<b>Floating Instruction Pointer</b>)</td>
+		</tr>
+		<tr>
+			<td><b> FDP (32 бита)</b></td>
+			<td colspan="16"> Регистр, где хранится адрес операнда указателя последней 
+			выполненной команды (<b>Floating Data Pointer</b>)</td>
+		</tr>
+		<tr>
+			<td><b> R0 - ST(2) <nobr>(80 бит)</nobr></b></td>
+			<td colspan="16"> Расширенное вещественное или любое другое допустимое данное сопроцессора</td>
+		</tr>
+		<tr>
+			<td><b> R1 - ST(3) <nobr>(80 бит)</nobr></b></td>
+			<td colspan="16"> Расширенное вещественное или любое другое допустимое данное сопроцессора</td>
+		</tr>
+		<tr>
+			<td><b> R6 - (TOP) вершина стека ST или ST(0) <nobr>(80 бит)</nobr></b></td>
+			<td colspan="16"> Расширенное вещественное или любое другое допустимое данное сопроцессора</td>
+		</tr>
+		<tr>
+			<td><b> R7 - ST(1) <nobr>(80 бит)</nobr></b></td>
+			<td colspan="16"> Расширенное вещественное или любое другое допустимое данное сопроцессора</td>
+		</tr>
+	</table></center></p>
+	
+	<a name="rd"></a>
+	<h2>Регистры данных.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Регистры данных сопроцессора <b>R0-R7</b> имеют длину <b>80 бит</b> (т.е. пять <b>16</b>-разрядных слов) 
+	и рассматриваются как <b>круговой стек</b>, вершина которого (<b>ТОР</b>) называется <b>ST</b> или 
+	<b>ST(0)</b> и является <b>плавающей</b>. Принцип работы с круговым стеком сопроцессора аналогичен 
+	обычному калькулятору. Любая команда загрузки данных сопроцессора автоматически перемещает вершину 
+	стека сопроцессора: <b>ТОР=ТОР+1</b>. На таблице свурху показана гипотетическая ситуация, когда в 
+	результате выполнения какой-то команды вершиной стека стал регистр <b>R6</b>. Остальные регистры 
+	распределяются подряд по кругу: <b>R7-ST(1), R0-ST(2),...,R5-ST(7)</b>. Это и есть их текущие имена
+	<b>ST(i)</b>, i=<b>l,...,7</b> на момент выполнения данной команды сопроцессора. Если в этих регистрах
+	есть данные, то они могут служить операндами в командах сопроцессора. <br>
+	<big><ins>Обращаться  напрямую к регистрам <b>R0-R7</b> нельзя.</ins></big></p>
+
+	<a name="sc"></a>
+	<h2>Система команд.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Система команд сопроцессора достаточно простая, если знать <b>ключ</b> и немного понимать английский язык.
+	<br><ins><big>Для их подключения нужно сделать следующее</ins>:</big><br><br>
+	<big>Воспользоваться одной из директив Ассемблера: <b>.8087, .287 (.286р), .387(.386 .487 (.486р)</b>.</big>
+	Необходимо иметь в виду, что не все команды сопроцессора, к сожалению, совместимы сверху вниз. Кроме того,
+	директива использования процессора <b>.х86р</b> предполагает компиляцию и работу программы в <b>32</b>-разрядном
+	режиме. Поэтому результаты расчета, выполненные с использованием команд младших моделей сопроцессора, могут
+	отличаться от результатов, полученных на старших моделях.<br><br>
+	<big>Сделать инициализацию сопроцессора с помощью команды <code>FINIT</code></big> <br><br>
+	<big>При компиляции использовать ДОПОЛНИТЕЛЬНЫЙ ключ <code>/r</code> или <code>/е</code> </big>
+	(<b>Emulated or Real floating-point instructions</b>). Таким образом, теперь вызов компилятора <b>Ассемблера</b>
+	для стыковки с <b>C++</b> может иметь следующий вид:<br><code>tasm.exe Name.asm /I /r /ml</code></p>
+
+	<a name="uoc"></a>
+	<h2>Условные обозначения для команд базового сопроцессора.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Базовый сопроцессор <b>i8087</b> имеет <b>69</b> базовых команд, которые подчиняются
+	следующим закономерностям:<ul class="text">
+	<li>Все они начинаются на букву <b>F</b> (Floating).</li>
+	<li>Вторая буква может быть связана с форматом обрабатываемых чисел:<ul>
+	<li><b>I</b> (Integer) — целые числа;</li>
+	<li><b>В</b> (Binary-coded decimal) — упакованное двоично-десятичное число (<b>BCD</b>).</li></ul>
+	<ins>Для вещественных чисел специальная буква НЕ выделяется</ins>.</li><br>
+	<li>Далее идет мнемонический код операции (<b>МКОП</b>), например:<ul>
+	<li><b>LD</b> (LoaD) — загрузить данное в вершину стека <b>ST</b>;</li>
+	<li><b>ST</b> (STore) — выгрузить данное из вершины стека <b>ST</b> и 
+	уже известные нам команды <code>ADD</code>, <code>MUL</code>, <code>DIV</code> и т.п.</li></ul></li>
+	<li>Заканчиваться команда может буквой <b>R</b> (Reversed — реверсная операция) и/или <b>Р</b>
+	(Pop — вытолкнуть результат из стека и освободить вершину стека <b>ST</b>).</p>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td><b>МКОП</b></td>
+			<td><b>Обычная операция</b></td>
+			<td><b>Реверсная операция</b></td>
+		</tr>
+		<tr>
+			<td><code>SUB</code></td>
+			<td>Приемник = Приемник - Источник</td>
+			<td>Приемник = Приемник - Источник</td>
+		</tr>
+		<tr>
+			<td><code>DIV</code></td>
+			<td>Приемник = Приемник / Источник</td>
+			<td>Приемник = Приемник / Источник</td>
+		</tr>
+	</table></center>
+	<p class="text">
+	Сопроцессоры более поздних моделей, начиная с <b>i80387</b>, немного нарушили эту стройную
+	систему условных обозначений, но зато увеличили функциональные возможности команд по обработке
+	данных.
+	</p>
+
+	<a name="cpd"></a>
+	<h2>Команды пересылки данных.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	<big>Все команды этой группы имеют один операнд: либо источник, либо приемник.</big>
+	<br>Загрузка или извлечение информации происходит в/из вершины стека <b>ST(0)</b>.
+	Обычно вершину стека обозначают через <b>ST</b>, и в командах этой группы она явно
+	в операндах НЕ присутствует.</p><p>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td width="170px"><b>Команда</b></td>
+			<td width="190px"><b>Тип данных</b></td>
+			<td><b>Характеристика операнда</b></td>
+			<td><b>Пример</b></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Команды загрузки данных в стек</b></td>
+		</tr>
+		<tr>
+			<td><code>FLD</code> источник</td>
+			<td>Вещественное</td>
+			<td>Переменная в ОЗУ или ST(i), i=0,..,7</td>
+			<td><code>FLD а <br><nobr>FLD ST(5)</nobr></code></td>
+		</tr>
+		<tr>
+			<td><code>FBLD</code> источник</td>
+			<td>Типа BCD</td>
+			<td>Переменная в ОЗУ</td>
+			<td><code>FBLD аВс</code></td>
+		</tr>
+		<tr>
+			<td><code>FILD</code> источник</td>
+			<td>Целое</td>
+			<td>Переменная в ОЗУ</td>
+			<td><code>FELD ka</code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Команды копирования данных из стека</b></td>
+		</tr>
+		<tr>
+			<td><code>FST</code>  приемник</td>
+			<td>Вещественное</td>
+			<td>Переменная в ОЗУ или ST(i), i=1,...,7.</td>
+			<td><code>FST аp <br><nobr>FST ST(1)</nobr></code></td>
+		</tr>
+		<tr>
+			<td><code>FIST</code> приемник</td>
+			<td>Целое</td>
+			<td>Переменная в ОЗУ</td>
+			<td><code>FIST kab</code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Команды извлечения данных из стека с освобождением вершины стека</b></td>
+		</tr>
+		<tr>
+			<td><code>FSTP</code>  приемник</td>
+			<td>Вещественное</td>
+			<td>Переменная в ОЗУ или ST(i), i=1,...,7.</td>
+			<td><code>FSTP аp <br><nobr>FSTP ST(5)</nobr></code></td>
+		</tr>
+		<tr>
+			<td><code>FBSTP</code> приемник</td>
+			<td>Типа BCD</td>
+			<td>Переменная в ОЗУ</td>
+			<td><code>FBSTP ppp</code></td>
+		</tr>
+		<tr>
+			<td><code>FISTP</code> приемник</td>
+			<td>Целое</td>
+			<td>Переменная в ОЗУ</td>
+			<td><code>FISTP kabP</code></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Команда обмена содержимого источника с ST(0)</b></td>
+		</tr>
+		<tr>
+			<td><code>FXCH </code> источник</td>
+			<td>Если источник НЕ указан, то считается, что он соответствует <nobr>ST(1)</nobr>.</td>
+			<td>ST(i), i=1,...,7.</td>
+			<td><code>FXCH<br><nobr>FXCH ST(4)</nobr></code></td>
+		</tr>
+	</table></center>
+	</p>
+	
+	<a name="czk"></a>
+	<h2>Команды загрузки констант.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	Команды этой группы помешают в вершину стека <b>ST(0)</b> часто используемые константы.
+	Начиная с сопроцессора <b>i80387</b>, эти константы хранятся в более точном формате.<br>
+	<big>Команды операндов не имеют</big>.</p><p>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+		<tr>
+			<td><b>Команда</b></td>
+			<td><b>Назначение</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDI</code></td>
+			<td>Поместить в <b>ST(0)</b> число <b>1.0</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDZ</code></td>
+			<td>Поместить в <b>ST(0)</b> число <b>+0.0</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDPI</code></td>
+			<td>Поместить в <b>ST(0)</b> число <b>р</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDL2E</code></td>
+			<td>Поместить в <b>ST(0)</b> число, равное <b>log<sub>2</sub> e</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDL2T</code></td>
+			<td>Поместите в <b>ST(0) </b>число, равное <b>log<sub>2</sub> 10</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDLN2</code></td>
+			<td>Поместить в <b>ST(0) </b>число, равное <b>ln 2</b></td>
+		</tr>
+		<tr>
+			<td><code>FLDLG2</code></td>
+			<td>Поместить в <b>ST(0)</b> число, равное <b>lg 2</b></td>
+		</tr>
+	</table></center></p>
+	
+	
+	<a name="ak"></a>
+	<h2>Арифметические команды.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">	
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+	<caption> <big><b>Команды базовой арифметики </b></big></caption>
+		<tr>
+			<td><b> Команда </b></td>
+			<td><b> Тип данных </b></td>
+			<td><b> Алгоритм выполнения</b></td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды сложения </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FADD</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = приемник + источник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FADDP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FIADD</code> источник</td>
+			<td>Целое</td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды обычного вычитания </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSUB</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = приемник - источник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSUBP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FISUB</code> источник</td>
+			<td>Целое</td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды реверсного (обратного) вычитания </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSUBR</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = источник - приемник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSUBRP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FISUBR</code> источник</td>
+			<td>Целое</td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды умножения </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FMUL</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = источник * приемник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FMULP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FTMUL</code> источник</td>
+			<td>Целое</td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды обычного деления </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FDIV</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = приемник / источник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FDIVP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FIDIV</code> источник</td>
+			<td>Целое</td>
+		</tr>
+		<tr>
+			<td colspan="3"><b> Команды реверсного (обратного) деления </b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FDIVR</code> приемник, источник</td>
+			<td>Вещественное</td>
+			<td rowspan="3">Приемник = источник / приемник</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FDIVRP</code> приемник, источник</td>
+			<td>Вещественное</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FIDIVR</code> источник</td>
+			<td>Целое</td>
+		</tr>
+	</table></center><br><br>
+	<a name="sak"></a>
+	<center><table border="1" cellspacing="0" cellpadding="10" width="95%" class="text">
+	<caption> <big><b>Специальные арифметические команды </b></big></caption>
+		<tr>
+			<td><b> Команда </b></td>
+			<td><b> Назначение </b></td>
+			<td><b> Алгоритм выполнения</b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FPREM</code></td>
+			<td width="333px">Нахождение частичного остатка от деления путем последовательного вычитания
+			<b>64</b> раза содержимого <b>ST(1)</b> из <b>ST(0)</b></td>
+			<td rowspan="2" align="left">ST(0)=ocтаток[ST(0)/ST( 1)]<br><br>
+				Формируется флаг <b>С2</b> регистра управления <b>CWR</b>:<br>
+				<b>С2=0</b> — получен точный остаток от деления, т.е. остаток<SТ(1).<br>
+				<br><b>С2=1</b> — точный остаток НЕ получен (получен частичный остаток)</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FPREM1</code><br>(i80387)</td>
+			<td>Нахождение частичного остатка от деления в стандарте <b>IEEE</b> — 
+			округление к ближайшему целому</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FABS</code></td>
+			<td>Нахождение абсолютного значения	</td>
+			<td>ST(0) = abs(ST(0))</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSQRT</code></td>
+			<td>Нахождение корня квадратного</td>
+			<td>ST(0) = sqrt(ST(0))</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FCHS</code></td>
+			<td>Изменение знака</td>
+			<td>ST(0) = -ST(0)</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FRNDINT</code></td>
+			<td>Округление до целого</td>
+			<td align="left">Содержимое <b>ST(0)</b> округляется до целого в соответствии с битами 
+			<b>RC</b> регистра управления сопроцессором <b>CWR</b></td>
+		</tr>
+		<tr>
+			<td align="left"><code>FXTRACT</code></td>
+			<td>Извлечь экспоненту и мантиссу числа</td>
+			<td align="left">Число ==> ST(0);<br>ST(0) = мантисса числа;<br>ST(I) — экспонента числа</td>
+		</tr>
+		<tr>
+			<td align="left"><code>FSCALE</code></td>
+			<td>Команда, обратная FXTRACT</td>
+			<td align="left">ST(0) <== мантисса числа;<br>ST(1) <== экспонента числа;<br>ST(0)=ST(0)* 2<sup>ST(1)</sup></td>
+		</tr>
+		</table></center></p>
+
+	<a name="pr1"></a>
+	<h2>Пример.</h2>
+	<p class="stress">	 </p> 
+	<p class="text">
+	<table>
+		<tr>
+			<td colspan="3"><comment>; Вычислить действительные корни квадратного уравнения:<br>
+			; a*x*x + b*x + c = 0 </comment><br>
+			<code>.387<br>
+				.MODEL LARGE,C<br>
+				.DATA<br>
+				EXTRN C a:DWORD,b:DWORD,c:DWORD,x1:DWORD,x2:DWORD,d:DWORD<br>
+				EXTRN C ac:DWORD,bb:DWORD	<br>
+				.CODE<br>
+				PUBLIC	quadr<br>	
+				four	DD	4.<br>
+				two	DD	2.<br>
+				quadr	PROC C FAR</code></td>
+			
+		</tr>
+		<tr>
+			<td width="333px"><code>FINIT</code></td>
+			<td colspan="2"><comment>; иниц. 8087</comment></td>
+		</tr>
+		<tr>
+			<td><code></code></td>
+			<td width="165px"><comment>;------------ST(0)------------</comment></td>
+			<td><comment>! ------------ST(1)------------!</comment></td>
+		</tr>
+		<tr>
+			<td><code>FILD    b </code></td>
+			<td ><comment>; b </comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr>
+		<tr>
+			<td><code>FMUL	ST(0),ST(0)</code></td>
+			<td><comment>; b*b</comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr>
+		<tr>
+			<td><code>FST     bb</code></td>
+			<td colspan="2"><comment>; копиpование веpшины стека ==> bb</comment></td>
+		</tr><tr>
+			<td><code>FILD	a</code></td>
+			<td><comment>; a</comment></td>
+			<td ><comment>! b*b </comment></td>
+		</tr><tr>
+			<td><code>FMUL	four</code></td>
+			<td><comment>; 4*a</comment></td>
+			<td ><comment>! b*b </comment></td>
+		</tr><tr>
+			<td><code>FIMUL	c</code></td>
+			<td><comment>; 4*a*c</comment></td>
+			<td ><comment>! b*b </comment></td>
+		</tr>
+		<tr>
+			<td><code>FST     ac</code></td>
+			<td colspan="2"><comment>; копиpование веpшины стека ==> ac</comment></td>
+		</tr><tr>
+			<td><code>FSUBP	ST(1),ST(0)</code></td>
+			<td><comment>; ;d=b*b-4*a*c</comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr>
+		<tr>
+			<td><code>FST     d</code></td>
+			<td colspan="2"><comment>; копиpование веpшины стека ==> d</comment></td>
+		</tr><tr>
+			<td><code>FSQRT</code></td>
+			<td><comment>; sqrt(d)</comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr><tr>
+			<td><code>FLD	ST(0)<code></td>
+			<td><comment>; sqrt(d)</comment></td>
+			<td ><comment>! sqrt(d) </comment></td>
+		</tr><tr>
+			<td><code>FCHS</code></td>
+			<td><comment>; -sqrt(d)</comment></td>
+			<td ><comment>! sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FIADD    b</code></td>
+			<td><comment>; b-sqrt(d)</comment></td>
+			<td ><comment>! sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FCHS</code></td>
+			<td><comment>; -b+sqrt(d)</comment></td>
+			<td ><comment>! sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FXCH ST(1)</code></td>
+			<td><comment>; sqrt(d)</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FIADD    b</code></td>
+			<td><comment>; b+sqrt(d)</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FCHS</code></td>
+			<td><comment>; -b-sqrt(d)</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FIDIV    a </code></td>
+			<td><comment>; -b-sqrt(d)/a</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FDIV    two</code></td>
+			<td><comment>; -b-sqrt(d)/a/2</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FSTP	x2</code></td>
+			<td><comment>; -b+sqrt(d)</comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr><tr>
+			<td><code>FIDIV    a </code></td>
+			<td><comment>; -b+sqrt(d)/a</comment></td>
+			<td ><comment>! -b+sqrt(d)</comment></td>
+		</tr><tr>
+			<td><code>FDIV    two</code></td>
+			<td><comment>; -b+sqrt(d)/a/2</comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr><tr>
+			<td><code>FSTP	x1</code></td>
+			<td><comment>; ? </comment></td>
+			<td ><comment>! ? </comment></td>
+		</tr>
+		<tr>
+			<td><code>RET<br>
+			QUADR	ENDP<br>
+			END</code></td>
+			<td><comment></comment></td>
+			<td ><comment></comment></td>
+		</tr>
+	</table></p>
+		
+  
+	
+	<p class="stress">	 </p> 
+	<center><b><a class="orange" href="l5.html">Лабораторная работа №5</a></b></center>
+ <!-- страничка -- END -->
+   </div></div></div>
+ 
+      <div id="basement"><div id="basement-content">
+         <div id="basement_text">
+            <br>Программирование на Машинно-Ориентированных Языках.<br>
+			Преподаватель: Коробов С.А.<br><br>
+      </div>
+	  <a class="home2" href="../index.html"><img title="На главную" src="content/home.png"></a>
+	  <a class="book" href="themes_3.html"><img title="К оглавлению" src="content/book.png"></a>
+	  </div>
+	  <a class="min1" href="t11.html"><img title="Предыдущая тема" src="content/left.png"></a>
+	  <a class="max1" href="t14.html"><img title="Следующая тема" src="content/right.png"></a>
+	  </div>
+</body>
+ </html>
