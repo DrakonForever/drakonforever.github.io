@@ -1,0 +1,420 @@
+.body {
+  margin: 0;
+  min-width: 1040px;
+  padding: 0;  
+  background: url(body.jpg) repeat #ccc;
+  font: 13px Arial;
+  color: #000;
+  width: 100%;
+}
+
+#header { /*"параметры шапки"*/	
+  position: fixed ;
+  min-width: 100%;
+  z-index: 8888;
+  height: 100px;
+  border-bottom: 3px solid #ff9933;
+  background: url(gradient-grey.png) #444;
+}
+
+#header-content {							/*...*/
+  position: relative;
+  min-width: 1000px;
+  height: 102px;
+  width: 80%;
+  margin: 0 auto;
+  background: url(sut_logo80.png) no-repeat;
+}
+
+#width-page {   							/*задаем "ширину листа"*/
+  position: absolute;
+  margin: 0 auto 0 auto;
+  overflow: auto;
+  top: 102px; 
+  left: 0; right: 0;
+  width: 80%;
+}
+
+#page {									/*"красим лист"*/
+  position: relative;
+  /*min-height: 470px;*/
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: #ffffff;
+}
+
+#page_content {							/*содержимое листа-стиль*/
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 15px;
+  border: 1px solid #ffffff;
+}
+
+#width-page-00 {   							/*задаем "ширину листа00"*/
+  
+  position: fixed;
+  z-index:9999;
+  overflow: auto;
+  top: 18%; 
+  bottom: 3%;
+  left: 53px;
+  right: 0;
+  width: 33px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  /*padding: 5% 0;*/
+}
+
+#page-00 {
+	/*padding: 10% 0;*/
+	margin: 0 10px 0 10px;
+	width:1em; 
+	line-height:1em; 
+	font-size:17px;
+	color: #ff8000;
+	}
+
+#main_block {							/*фон гл. стр.*/
+  position: relative;
+  height: 500px;/*649px;*/
+  background: url(fon1-.jpg) no-repeat;
+}
+
+#themes_block {							/*фон стр. тем*/
+  position: relative;
+  height: 500px;/*649px;*/
+  background: url(fon2.jpg) no-repeat;
+}
+
+#main_menu {								/*...*/
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+/*	Подвал	*/
+
+
+/*	Подвал	*/
+#basement {
+  position: relative;
+  height: 90px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid #444444;
+  background: #444444;
+}
+
+#basement_text {
+  float: left;
+  margin: 17px 10px 10px 10px;
+  border-left: 3px solid #ff8000;
+  padding-left: 5px;
+  color: #fff;
+  font-family: Arial;
+  font-size: 11px;
+}
+/* Подвал -- END */
+
+
+
+
+/*Главное меню--BEGIN*/
+.menu_mainmenu, .menu_mainmenu ul {  				/*убираем "точки"*/
+        margin: 0;
+        padding: 0;
+        list-style: none;       
+}
+.menu_mainmenu li {								 /*поддержка смещения выпад меню*/
+        float: left;
+        position: relative;
+}
+.menu_mainmenu a {								 /*стиль ссылок*/
+        float: left;
+        padding: 10px 15px 10px 15px;
+        color: #dedede;
+        text-transform: uppercase;
+        font: bold 12px Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+}
+.menu_mainmenu ul {								/*"сокращаем до заголовков"*/
+        margin: 20px 0 0 0;
+        _margin: 0; /*IE6 only*/
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        z-index: 9999;
+        background:#444444;
+}
+.menu_mainmenu ul a {								/*делим ссылки на строки*/
+        padding: 10px;
+        width: 190px;
+        _height: 10px; /*IE6 only*/
+        display: block;
+        white-space: normal;
+        float: none;
+        text-transform: none;
+}
+
+.menu_mainmenu ul a:hover {						/*выделяет выбранную строку*/
+        background: url(gradient-orange.png) bottom repeat-x #ff9933;
+        color: #fff;
+}
+.menu_mainmenu li:hover > ul {						/*раскрываем заголовок*/
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+}
+.menu_mainmenu ul li {								/*прорисовываем "границы кнопок"*/
+        float: none;
+        display: block;
+        border: 0;
+        _line-height: 0; /*IE6 only*/
+        -moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+        -webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+        box-shadow: 0 1px 0 #111, 0 2px 0 #666;   
+        -ms-box-shadow: 0 1px 0 #111, 0 2px 0 #666;   
+}
+.menu_mainmenu ul li:last-child {					/*прорисовываем "границы кнопок" без излишек*/
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+}
+
+.menu_mainmenu ul ul {					/*меню 2+ уровня*/
+        top: 0;
+        left: 210px;
+        margin: 0 0 0 17px;
+        _margin: 0; /*IE6 only*/
+        -moz-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+        -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+        box-shadow: -1px 0 0 rgba(255,255,255,.3);
+}
+
+/*Главное меню--END*/
+
+
+
+
+p.stress {							/*горизонт черта под тему*/
+   border-top: 2px solid #ff9933;
+   padding-top: 5px;
+   margin-top: 0;
+}
+
+.text{
+  color: #666666;
+  font-style:italic ;
+  font: 19px Courier New, Arial;
+}
+big{
+	font-size: 23px;
+	font-weight:bold;
+}
+a.orange {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+a.orange:hover {
+  text-decoration: underline;
+}
+
+a.white {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.white:hover {
+  text-decoration: underline;
+}
+
+
+div.themes h2 {
+  margin-bottom: 2px;
+  margin-top: 18px;
+  color: #666666;
+  text-transform: uppercase;
+  font: bold 18px Arial, Helvetica;
+}
+
+
+#block-1 {
+  position: absolute; left: 1%;
+  margin: 35px;
+  width: 25%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#block-2 {
+  position: absolute; left: 33.5%;
+  margin: 35px;
+  width: 25%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#block-3 {
+  position: absolute; right: 1% ;
+  margin: 35px;
+  width: 25%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#block-name {
+  position: absolute; left: 10%; top:65px;
+  margin: 35px;
+  width: 70%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+a.home{
+
+	position: absolute;
+	right: 2%; 
+	top: 65px;
+}
+a.home2{
+	position: absolute;
+	right: 2%; 
+	top: 30px;
+}
+a.up{
+	float:right;
+}
+a.up_base{
+	position: absolute;
+	right: 5%; 
+	top: 30px;
+}
+a.min{
+	position: absolute;
+	left: 4%; 
+	top: 100px;
+}
+a.max{
+	position: absolute;
+	right: 4%; 
+	top: 100px;
+}
+a.book{
+	position: absolute;
+	right: 6%; 
+	top: 30px;
+}
+a img {
+    border: none; /* Убираем рамку */
+}
+.bonch{
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	color: #eaeaea;
+	font-family: Segoe UI;
+    font-size: 13px;
+	text-shadow: 0 1px 0 #000;
+}
+
+acronym {
+ cursor:help; /* Курсор мышми со знаком вопроса */
+ border-bottom: 1px dotted #ff9933; /* Подчеркивание текста */
+ color:#ff9933; /* Цвет текста */
+ }
+ 
+ a.none{
+	text-decoration: none;
+ }
+ 
+ code{
+	color:#ff9933;
+	font-family: Arial;
+    font-size: 20px;
+	font-weight:bold;
+ }
+ comment{
+	color:#ff9933;
+	font-family: Arial;
+    font-size: 15px;
+ }
+ 
+ #data {
+	border-collapse: collapse;
+}
+#data td {
+	border: 1px solid;
+}
+#data td.empty {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-top: 0;
+}
+#data td.empty1 {
+	border-left: 0;
+	border-bottom: 0;
+	border-top: 0;
+}
+#data td.empty2 {
+	border-right: 0;
+	border-bottom: 0;
+	border-top: 0;
+}
+
+#block-map {
+  position: absolute; left: 1%; top:5px;
+  margin: 35px;
+  width: 90%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(block_fon.png);
+  
+  color: #fff;
+  padding-left: 15px;
+  font-family: Segoe UI;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
